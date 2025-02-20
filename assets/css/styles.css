@@ -1,12 +1,17 @@
 /* 🌈 ตัวแปรสีหลัก */
 :root {
-    --primary-color: #343a40;  /* สีเทาเข้ม */
-    --secondary-color: #e9ecef; /* สีเทาอ่อน */
-    --highlight-color: #ffa600; /* สีเหลือง */
-    --background-color: #f8f9fa; /* สีพื้นหลัง */
+    --primary-color: #343a40;
+    /* สีเทาเข้ม */
+    --secondary-color: #e9ecef;
+    /* สีเทาอ่อน */
+    --highlight-color: #ffa600;
+    /* สีเหลือง */
+    --background-color: #f8f9fa;
+    /* สีพื้นหลัง */
     --white-color: #ffffff;
     --black-color: #000000;
-    --shadow-color: rgba(0, 0, 0, 0.15); /* สีเงาทั่วไป */
+    --shadow-color: rgba(0, 0, 0, 0.15);
+    /* สีเงาทั่วไป */
     --hover-color: rgba(52, 58, 64, 0.1);
 }
 
@@ -17,21 +22,31 @@
     box-sizing: border-box;
 }
 
-body { 
-    font-family: 'Poppins', Arial, sans-serif; 
-    background-color: var(--background-color);
-    padding: 50px 15px;
-}
-
 /* 🏷️ หัวข้อ */
 h1 {
+    font-family: 'Kanit', serif;
+    font-style: italic;
     font-size: 2.5rem;
     font-weight: 600;
     color: var(--black-color);
     text-align: center;
     margin: auto;
-    padding: 30px;
+    padding: 3px;
 }
+
+.description-style {
+    font-weight: 600;
+    color: var(--primary-color);
+    font-size: 1.3rem;
+}
+
+html, body {
+    font-family: 'Kanit', serif;
+    font-weight: 100; /* หรือกำหนดน้ำหนักฟอนต์ตามต้องการ */
+    background-color: var(--background-color);
+    padding: 50px 15px;
+}
+
 
 /* 🏷️ คอนเทนเนอร์หลัก */
 .container {
@@ -41,10 +56,11 @@ h1 {
 }
 
 /* 🏷️ กล่องค้นหา */
-.search-container { 
-    max-width: 900px; 
-    margin: auto; 
-    margin-bottom: 20px; 
+.search-container {
+    font-family: 'Kanit', serif;
+    max-width: 900px;
+    margin: auto;
+    padding: 30px;
 }
 
 #searchInput {
@@ -55,21 +71,12 @@ h1 {
     text-align: center;
     font-size: 1.1rem;
     transition: box-shadow 0.3s ease-in-out;
+    margin-top: 0px;
 }
 
 #searchInput:focus {
     outline: none;
     box-shadow: 0 0 10px rgba(128, 0, 255, 0.5);
-}
-
-/* 🏷️ หัวข้อ */
-h1 {
-    font-size: 2.5rem;
-    font-weight: 600;
-    color: var(--black-color);
-    text-align: center;
-    margin: 20px 0;
-    padding: 10px 0;
 }
 
 /* ✅ สไตล์สำหรับ Section Header */
@@ -82,15 +89,19 @@ h1 {
 }
 
 /* 🏷️ ตาราง */
-.table-container { 
-    max-width: 900px; 
+.table-container {
+    font-family: 'Kanit', serif;
+    max-width: 900px;
     margin: auto;
-    margin-bottom: 20px;
+    margin-bottom: 60px;
     overflow: hidden;
+    border-radius: 25px;
 }
 
 .table-custom {
     width: 100%;
+    table-layout: fixed;
+    /* กำหนดให้ความกว้างของตารางคงที่ */
     border-collapse: collapse;
     background-color: var(--white-color);
     box-shadow: 0 4px 10px var(--shadow-color);
@@ -98,6 +109,7 @@ h1 {
 
 /* ✅ ปรับสไตล์ให้ตาราง */
 .table-custom thead th {
+    font-size: 1.5rem;
     background-color: var(--primary-color);
     color: var(--white-color);
     font-weight: 600;
@@ -109,6 +121,14 @@ h1 {
     padding: 12px;
     text-align: left;
     vertical-align: middle;
+    word-break: break-word;
+    /* ตัดคำเมื่อข้อความยาวเกินไป */
+}
+
+/* ✅ เพิ่ม padding ที่ด้านบนของเซลล์ในแถวแรก */
+.table-custom tbody tr:first-child td {
+    padding-top: 30px;
+    /* คุณสามารถปรับค่า padding ตามที่ต้องการ */
 }
 
 /* ✅ แถวสลับสี */
@@ -120,6 +140,12 @@ h1 {
 .table-custom tbody tr:hover td {
     background-color: var(--hover-color);
 }
+body { 
+    font-family: 'Kanit', serif;
+    font-weight: 100;
+    background-color: var(--background-color);
+    padding: 50px 15px;
+}
 
 /* 🎭 ปุ่มคีย์ลัด */
 .shortcut-key {
@@ -129,7 +155,7 @@ h1 {
     border-radius: 12px;
     border: 1.5px solid var(--primary-color);
     font-size: 1.1em;
-    font-weight: 600;
+    font-weight: 500;
     color: var(--primary-color);
     cursor: pointer;
     transition: transform 0.2s ease-in-out, background-color 0.2s;

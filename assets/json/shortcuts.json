@@ -1476,7 +1476,7 @@
             ]
         }
     ],
-"Nodes": [
+    "Nodes": [
         {
             "description": "Group",
             "description_thai": "จัดกลุ่ม",
@@ -1607,7 +1607,7 @@
             ]
         }
     ],
-"Node Wrangler": [
+    "Node Wrangler": [
         {
             "description": "Preview Selected Node",
             "description_thai": "ดูตัวอย่างโหนดที่เลือก",
@@ -1666,7 +1666,7 @@
             ]
         }
     ],
-"Compositing": [
+    "Compositing": [
         {
             "description": "Move Background Image",
             "description_thai": "ย้ายภาพพื้นหลัง",
@@ -1866,7 +1866,7 @@
             ]
         }
     ],
-"Animation Timeline": [
+    "Animation Timeline": [
         {
             "description": "Jump to Start/End",
             "description_thai": "กระโดดไปจุดเริ่มต้น/สิ้นสุด",

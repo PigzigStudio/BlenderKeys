@@ -18,13 +18,15 @@ function searchTable() {
     });
 }
 
-// ✅ ฟังก์ชันโหลดข้อมูลจาก JSON
+// ✅ ฟังก์ชันโหลดข้อมูลจาก JSON และเติมข้อมูลลงในตาราง
 async function loadShortcuts() {
     try {
         const response = await fetch('assets/json/shortcuts.json');
         if (!response.ok) throw new Error('Network response was not ok');
 
         const data = await response.json();
+        console.log('Loaded data:', data); // แสดงข้อมูลในคอนโซล
+
         const categories = [
             "Selection", "Transform", "Modeling", "Cutting", "Navigation",
             "General", "Relations", "Camera", "Rendering", "UI",
@@ -33,7 +35,19 @@ async function loadShortcuts() {
             "Graph Editor", "Drivers", "Nonlinear"
         ];
 
-        categories.forEach(category => fillTable(data[category], `${category}-body`));
+        categories.forEach(category => {
+            const tableBody = document.getElementById(`${category}-body`);
+            if (tableBody) {
+                const categoryData = data[category];
+                if (categoryData) {
+                    fillTable(categoryData, tableBody);
+                } else {
+                    console.warn(`Category "${category}" not found in JSON data.`);
+                }
+            } else {
+                console.warn(`Table body with ID "${category}-body" not found.`);
+            }
+        });
 
     } catch (error) {
         console.error('Error loading shortcuts:', error);
@@ -41,33 +55,20 @@ async function loadShortcuts() {
 }
 
 // ✅ ฟังก์ชันเติมข้อมูลลงในตาราง
-function fillTable(data, tableBodyId) {
-    const tableBody = document.getElementById(tableBodyId);
-    if (!tableBody) return;
-
+function fillTable(data, tableBody) {
     data.forEach(item => {
         const row = document.createElement("tr");
 
-        // ✅ ใช้ `header_class` ถ้ามี
         if (item.header) {
-            const headerClass = item.header_class || "section-header"; // ถ้าไม่มีใช้ค่าเริ่มต้น
-            row.innerHTML = `<th colspan="2" class="${headerClass}">${item.header}</th>`;
+            row.innerHTML = `<th colspan="2" class="${item.header_class || "section-header"}">${item.header}</th>`;
         } else {
-            // ✅ ตรวจสอบว่ามี shortcut หรือไม่
-            const shortcutHtml = item.shortcut && Array.isArray(item.shortcut)
-                ? item.shortcut.map(s => `<span class="${s.class}">${s.key}</span>`).join(" ")
-                : "-"; // ถ้าไม่มี shortcut ให้แสดง "-"
-
-            row.innerHTML = `
-                <td>${item.description}<br>${item.description_thai || ""}</td>
-                <td>${shortcutHtml}</td>
-            `;
+            const shortcutHtml = item.shortcut?.map(s => `<span class="${s.class}">${s.key}</span>`).join(" ") || "-";
+            row.innerHTML = `<td><span class="description-style">${item.description}</span><br>${item.description_thai || ""}</td><td>${shortcutHtml}</td>`;
         }
 
         tableBody.appendChild(row);
     });
 }
 
-
-// ✅ โหลดข้อมูลเมื่อหน้าเว็บโหลดเสร็จ
-window.onload = loadShortcuts;
+// เรียกใช้งานฟังก์ชันโหลดข้อมูลเมื่อหน้าเว็บโหลดเสร็จ
+document.addEventListener('DOMContentLoaded', loadShortcuts);

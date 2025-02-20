@@ -10,8 +10,9 @@
     <link rel="icon" href="assets/images/Profile_002.ico" type="image/png">
 
     <!-- ✅ โหลด Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <!-- ✅ โหลดไฟล์ CSS -->
     <link href="assets/css/styles.css" rel="stylesheet">
 
@@ -22,11 +23,12 @@
 
 <body>
     <div class="container">
-        <h1 class="text-center"><i class="bi bi-keyboard"></i> Blender Shortcut Keys</h1>
+        <h1 class="text-center"><i class="bi bi-keyboard"></i>&nbsp;&nbsp;Blender Shortcut Keys</h1>
 
         <!-- 🔎 ช่องค้นหา -->
         <div class="search-container">
-            <input type="text" id="searchInput" class="form-control" placeholder="🔍 ค้นหาคีย์ลัด..." onkeyup="searchTable()">
+            <input type="text" id="searchInput" class="form-control" placeholder="🔍 ค้นหาคีย์ลัด..."
+                onkeyup="searchTable()">
         </div>
 
         <!-- ✅ ตาราง Shortcut (แต่ละหมวดหมู่) -->
@@ -85,6 +87,171 @@
             </table>
         </div>
 
+        <div class="table-container">
+            <table class="table-custom">
+                <thead>
+                    <tr>
+                        <th colspan="2">🔧 General</th>
+                    </tr>
+                </thead>
+                <tbody id="General-body"></tbody>
+            </table>
+        </div>
+
+        <div class="table-container">
+            <table class="table-custom">
+                <thead>
+                    <tr>
+                        <th colspan="2">🔗 Relations</th>
+                    </tr>
+                </thead>
+                <tbody id="Relations-body"></tbody>
+            </table>
+        </div>
+
+        <div class="table-container">
+            <table class="table-custom">
+                <thead>
+                    <tr>
+                        <th colspan="2">📷 Camera</th>
+                    </tr>
+                </thead>
+                <tbody id="Camera-body"></tbody>
+            </table>
+        </div>
+
+        <div class="table-container">
+            <table class="table-custom">
+                <thead>
+                    <tr>
+                        <th colspan="2">🎞️ Rendering</th>
+                    </tr>
+                </thead>
+                <tbody id="Rendering-body"></tbody>
+            </table>
+        </div>
+
+        <div class="table-container">
+            <table class="table-custom">
+                <thead>
+                    <tr>
+                        <th colspan="2">🖥️ UI</th>
+                    </tr>
+                </thead>
+                <tbody id="UI-body"></tbody>
+            </table>
+        </div>
+
+        <div class="table-container">
+            <table class="table-custom">
+                <thead>
+                    <tr>
+                        <th colspan="2">🛠️ Bool-Tool</th>
+                    </tr>
+                </thead>
+                <tbody id="Bool-Tool-body"></tbody>
+            </table>
+        </div>
+
+        <div class="table-container">
+            <table class="table-custom">
+                <thead>
+                    <tr>
+                        <th colspan="2">🔗 Nodes</th>
+                    </tr>
+                </thead>
+                <tbody id="Nodes-body"></tbody>
+            </table>
+        </div>
+
+        <div class="table-container">
+            <table class="table-custom">
+                <thead>
+                    <tr>
+                        <th colspan="2">🛠️ Node Wrangler</th>
+                    </tr>
+                </thead>
+                <tbody id="Node Wrangler-body"></tbody>
+            </table>
+        </div>
+
+        <div class="table-container">
+            <table class="table-custom">
+                <thead>
+                    <tr>
+                        <th colspan="2">🎨 Compositing</th>
+                    </tr>
+                </thead>
+                <tbody id="Compositing-body"></tbody>
+            </table>
+        </div>
+
+        <div class="table-container">
+            <table class="table-custom">
+                <thead>
+                    <tr>
+                        <th colspan="2">🖌️ UV Editor</th>
+                    </tr>
+                </thead>
+                <tbody id="UV Editor-body"></tbody>
+            </table>
+        </div>
+
+        <div class="table-container">
+            <table class="table-custom">
+                <thead>
+                    <tr>
+                        <th colspan="2">🎬 Animation General</th>
+                    </tr>
+                </thead>
+                <tbody id="Animation General-body"></tbody>
+            </table>
+        </div>
+
+        <div class="table-container">
+            <table class="table-custom">
+                <thead>
+                    <tr>
+                        <th colspan="2">⏱️ Animation Timeline</th>
+                    </tr>
+                </thead>
+                <tbody id="Animation Timeline-body"></tbody>
+            </table>
+        </div>
+
+        <div class="table-container">
+            <table class="table-custom">
+                <thead>
+                    <tr>
+                        <th colspan="2">📈 Graph Editor</th>
+                    </tr>
+                </thead>
+                <tbody id="Graph Editor-body"></tbody>
+            </table>
+        </div>
+
+        <div class="table-container">
+            <table class="table-custom">
+                <thead>
+                    <tr>
+                        <th colspan="2">🚗 Drivers</th>
+                    </tr>
+                </thead>
+                <tbody id="Drivers-body"></tbody>
+            </table>
+        </div>
+
+        <div class="table-container">
+            <table class="table-custom">
+                <thead>
+                    <tr>
+                        <th colspan="2">🎬 Nonlinear</th>
+                    </tr>
+                </thead>
+                <tbody id="Nonlinear-body"></tbody>
+            </table>
+        </div>
+
         <!-- ✅ ไอคอนผู้สร้าง -->
         <a href="https://web.facebook.com/profile.php?id=61558622853306" target="_blank">
             <img src="assets/images/Profile_002.png" alt="Creator Icon" class="creator-icon">
@@ -96,5 +263,4 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
-
 </html>
