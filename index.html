@@ -12,13 +12,15 @@
     <!-- ✅ โหลด Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
     <!-- ✅ โหลดไฟล์ CSS -->
     <link href="assets/css/styles.css" rel="stylesheet">
 
-    <!-- ✅ โหลด Bootstrap 5 และ Bootstrap Icons -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+<!-- ✅ โหลด Bootstrap 5 -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
 <body>
@@ -31,21 +33,21 @@
                 onkeyup="searchTable()">
         </div>
 
-<!-- ✅ ตาราง Shortcut (แต่ละหมวดหมู่) -->
-<div class="table-container">
-    <table class="table-custom">
-        <thead onclick="toggleTable('Selection-body')" style="cursor: pointer;">
-            <tr>
-                <th colspan="2">🎯 Selection การเลือก</th>
-            </tr>
-        </thead>
-        <tbody id="Selection-body"></tbody>
-    </table>
-</div>
+        <!-- ✅ ตาราง Shortcut (แต่ละหมวดหมู่) -->
+        <div class="table-container">
+            <table class="table-custom">
+                <thead onclick="toggleTable('Selection-body')" style="cursor: pointer;">
+                    <tr>
+                        <th colspan="2">🎯 Selection การเลือก</th>
+                    </tr>
+                </thead>
+                <tbody id="Selection-body"></tbody>
+            </table>
+        </div>
 
         <div class="table-container">
             <table class="table-custom">
-                <thead>
+                <thead onclick="toggleTable('Transform-body')" style="cursor: pointer;">
                     <tr>
                         <th colspan="2">📐 Transform</th>
                     </tr>
@@ -56,7 +58,7 @@
 
         <div class="table-container">
             <table class="table-custom">
-                <thead>
+                <thead onclick="toggleTable('Modeling-body')" style="cursor: pointer;">
                     <tr>
                         <th colspan="2">🛠️ Modeling</th>
                     </tr>
@@ -67,7 +69,7 @@
 
         <div class="table-container">
             <table class="table-custom">
-                <thead>
+                <thead onclick="toggleTable('Cutting-body')" style="cursor: pointer;">
                     <tr>
                         <th colspan="2">✂️ Cutting</th>
                     </tr>
@@ -78,7 +80,7 @@
 
         <div class="table-container">
             <table class="table-custom">
-                <thead>
+                <thead onclick="toggleTable('Navigation-body')" style="cursor: pointer;">
                     <tr>
                         <th colspan="2">🧭 Navigation</th>
                     </tr>
@@ -89,7 +91,7 @@
 
         <div class="table-container">
             <table class="table-custom">
-                <thead>
+                <thead onclick="toggleTable('General-body')" style="cursor: pointer;">
                     <tr>
                         <th colspan="2">🔧 General</th>
                     </tr>
@@ -100,7 +102,7 @@
 
         <div class="table-container">
             <table class="table-custom">
-                <thead>
+                <thead onclick="toggleTable('Relations-body')" style="cursor: pointer;">
                     <tr>
                         <th colspan="2">🔗 Relations</th>
                     </tr>
@@ -111,7 +113,7 @@
 
         <div class="table-container">
             <table class="table-custom">
-                <thead>
+                <thead onclick="toggleTable('Camera-body')" style="cursor: pointer;">
                     <tr>
                         <th colspan="2">📷 Camera</th>
                     </tr>
@@ -122,7 +124,7 @@
 
         <div class="table-container">
             <table class="table-custom">
-                <thead>
+                <thead onclick="toggleTable('Rendering-body')" style="cursor: pointer;">
                     <tr>
                         <th colspan="2">🎞️ Rendering</th>
                     </tr>
@@ -133,7 +135,7 @@
 
         <div class="table-container">
             <table class="table-custom">
-                <thead>
+                <thead onclick="toggleTable('UI-body')" style="cursor: pointer;">
                     <tr>
                         <th colspan="2">🖥️ UI</th>
                     </tr>
@@ -144,7 +146,7 @@
 
         <div class="table-container">
             <table class="table-custom">
-                <thead>
+                <thead onclick="toggleTable('Bool-Tool-body')" style="cursor: pointer;">
                     <tr>
                         <th colspan="2">🛠️ Bool-Tool</th>
                     </tr>
@@ -155,7 +157,7 @@
 
         <div class="table-container">
             <table class="table-custom">
-                <thead>
+                <thead onclick="toggleTable('Nodes-body')" style="cursor: pointer;">
                     <tr>
                         <th colspan="2">🔗 Nodes</th>
                     </tr>
@@ -166,7 +168,7 @@
 
         <div class="table-container">
             <table class="table-custom">
-                <thead>
+                <thead onclick="toggleTable('Node Wrangler-body')" style="cursor: pointer;">
                     <tr>
                         <th colspan="2">🛠️ Node Wrangler</th>
                     </tr>
@@ -177,7 +179,7 @@
 
         <div class="table-container">
             <table class="table-custom">
-                <thead>
+                <thead onclick="toggleTable('Compositing-body')" style="cursor: pointer;">
                     <tr>
                         <th colspan="2">🎨 Compositing</th>
                     </tr>
@@ -188,7 +190,7 @@
 
         <div class="table-container">
             <table class="table-custom">
-                <thead>
+                <thead onclick="toggleTable('UV Editor-body')" style="cursor: pointer;">
                     <tr>
                         <th colspan="2">🖌️ UV Editor</th>
                     </tr>
@@ -199,7 +201,7 @@
 
         <div class="table-container">
             <table class="table-custom">
-                <thead>
+                <thead onclick="toggleTable('Animation General-body')" style="cursor: pointer;">
                     <tr>
                         <th colspan="2">🎬 Animation General</th>
                     </tr>
@@ -210,7 +212,7 @@
 
         <div class="table-container">
             <table class="table-custom">
-                <thead>
+                <thead onclick="toggleTable('Animation Timeline-body')" style="cursor: pointer;">
                     <tr>
                         <th colspan="2">⏱️ Animation Timeline</th>
                     </tr>
@@ -221,7 +223,7 @@
 
         <div class="table-container">
             <table class="table-custom">
-                <thead>
+                <thead onclick="toggleTable('Graph Editor-body')" style="cursor: pointer;">
                     <tr>
                         <th colspan="2">📈 Graph Editor</th>
                     </tr>
@@ -232,7 +234,7 @@
 
         <div class="table-container">
             <table class="table-custom">
-                <thead>
+                <thead onclick="toggleTable('Drivers-body')" style="cursor: pointer;">
                     <tr>
                         <th colspan="2">🚗 Drivers</th>
                     </tr>
@@ -243,7 +245,7 @@
 
         <div class="table-container">
             <table class="table-custom">
-                <thead>
+                <thead onclick="toggleTable('Nonlinear-body')" style="cursor: pointer;">
                     <tr>
                         <th colspan="2">🎬 Nonlinear</th>
                     </tr>
@@ -263,4 +265,5 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
+
 </html>
