@@ -1,20 +1,42 @@
 // ✅ ฟังก์ชันค้นหา
 function searchTable() {
-    let input = document.getElementById("searchInput").value.toLowerCase();
-    let tables = document.querySelectorAll(".table-container");
+    const input = document.getElementById("searchInput").value.toLowerCase();
+    const tables = document.querySelectorAll(".table-container");
 
     tables.forEach(table => {
         let hasMatch = false;
-        let rows = table.querySelectorAll("tbody tr");
 
-        rows.forEach(row => {
-            let text = row.innerText.toLowerCase();
-            row.style.display = text.includes(input) ? "" : "none";
-            if (text.includes(input)) hasMatch = true;
+        // ค้นหาใน Header
+        const headers = table.querySelectorAll("thead th");
+        headers.forEach(header => {
+            if (header.innerText.toLowerCase().includes(input)) {
+                hasMatch = true;
+            }
         });
 
-        // ✅ แสดงตารางหากพบผลลัพธ์
-        table.style.display = hasMatch ? "" : "none";
+        // ค้นหาในแถวข้อมูล
+        const rows = table.querySelectorAll("tbody tr");
+        rows.forEach(row => {
+            if (row.innerText.toLowerCase().includes(input)) {
+                row.style.display = "";
+                hasMatch = true;
+            } else {
+                row.style.display = "none";
+            }
+        });
+
+        // แสดงตารางถ้าพบผลลัพธ์การค้นหาในแถวข้อมูล
+        if (hasMatch) {
+            table.style.display = "";
+            // แสดงทุกแถวในตารางถ้า Header ตรงกับคำค้นหา
+            if (headers.length > 0 && headers[0].innerText.toLowerCase().includes(input)) {
+                rows.forEach(row => {
+                    row.style.display = "";
+                });
+            }
+        } else {
+            table.style.display = "none";
+        }
     });
 }
 
@@ -62,7 +84,14 @@ function fillTable(data, tableBody) {
         if (item.header) {
             row.innerHTML = `<th colspan="2" class="${item.header_class || "section-header"}">${item.header}</th>`;
         } else {
-            const shortcutHtml = item.shortcut?.map(s => `<span class="${s.class}">${s.key}</span>`).join(" ") || "-";
+            const shortcutHtml = item.shortcut?.map(s => {
+                if (s.class) {
+                    return `<span class="${s.class}">${s.key}</span>`;
+                } else {
+                    return `<span>&nbsp;${s.key}&nbsp;</span>`; // เพิ่มเว้นวรรค
+                }
+            }).join(' ') || "-";
+            
             row.innerHTML = `<td><span class="description-style">${item.description}</span><br>${item.description_thai || ""}</td><td>${shortcutHtml}</td>`;
         }
 
@@ -72,3 +101,8 @@ function fillTable(data, tableBody) {
 
 // เรียกใช้งานฟังก์ชันโหลดข้อมูลเมื่อหน้าเว็บโหลดเสร็จ
 document.addEventListener('DOMContentLoaded', loadShortcuts);
+
+function toggleTable(tableId) {
+    const table = document.getElementById(tableId);
+    table.style.display = table.style.display === 'none' ? '' : 'none';
+}

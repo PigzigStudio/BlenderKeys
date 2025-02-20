@@ -31,17 +31,17 @@
                 onkeyup="searchTable()">
         </div>
 
-        <!-- ✅ ตาราง Shortcut (แต่ละหมวดหมู่) -->
-        <div class="table-container">
-            <table class="table-custom">
-                <thead>
-                    <tr>
-                        <th colspan="2">🎯 Selection การเลือก</th>
-                    </tr>
-                </thead>
-                <tbody id="Selection-body"></tbody>
-            </table>
-        </div>
+<!-- ✅ ตาราง Shortcut (แต่ละหมวดหมู่) -->
+<div class="table-container">
+    <table class="table-custom">
+        <thead onclick="toggleTable('Selection-body')" style="cursor: pointer;">
+            <tr>
+                <th colspan="2">🎯 Selection การเลือก</th>
+            </tr>
+        </thead>
+        <tbody id="Selection-body"></tbody>
+    </table>
+</div>
 
         <div class="table-container">
             <table class="table-custom">

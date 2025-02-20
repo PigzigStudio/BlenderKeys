@@ -40,9 +40,11 @@ h1 {
     font-size: 1.3rem;
 }
 
-html, body {
+html,
+body {
     font-family: 'Kanit', serif;
-    font-weight: 100; /* หรือกำหนดน้ำหนักฟอนต์ตามต้องการ */
+    font-weight: 100;
+    /* หรือกำหนดน้ำหนักฟอนต์ตามต้องการ */
     background-color: var(--background-color);
     padding: 50px 15px;
 }
@@ -140,7 +142,8 @@ html, body {
 .table-custom tbody tr:hover td {
     background-color: var(--hover-color);
 }
-body { 
+
+body {
     font-family: 'Kanit', serif;
     font-weight: 100;
     background-color: var(--background-color);
@@ -170,7 +173,7 @@ body {
 
 /* 🖱️ ไอคอนเมาส์ */
 .mouse-icon {
-    width: 48px;
+    width: px;
     height: 48px;
     vertical-align: middle;
     pointer-events: none;
