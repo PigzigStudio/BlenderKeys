@@ -1,0 +1,157 @@
+/* 🌈 ตัวแปรสีหลัก */
+:root {
+    --primary-color: #343a40;  /* สีเทาเข้ม */
+    --secondary-color: #e9ecef; /* สีเทาอ่อน */
+    --highlight-color: #ffa600; /* สีเหลือง */
+    --background-color: #f8f9fa; /* สีพื้นหลัง */
+    --white-color: #ffffff;
+    --black-color: #000000;
+    --shadow-color: rgba(0, 0, 0, 0.15); /* สีเงาทั่วไป */
+    --hover-color: rgba(52, 58, 64, 0.1);
+}
+
+/* ✨ รีเซ็ตค่าเบื้องต้น */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body { 
+    font-family: 'Poppins', Arial, sans-serif; 
+    background-color: var(--background-color);
+    padding: 50px 15px;
+}
+
+/* 🏷️ คอนเทนเนอร์หลัก */
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* 🏷️ กล่องค้นหา */
+.search-container { 
+    max-width: 900px; 
+    margin: auto; 
+    margin-bottom: 20px; 
+}
+
+#searchInput {
+    border: 2px solid var(--primary-color);
+    border-radius: 25px;
+    padding: 12px;
+    width: 100%;
+    text-align: center;
+    font-size: 1.1rem;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+#searchInput:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(128, 0, 255, 0.5);
+}
+
+/* 🏷️ หัวข้อ */
+h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: var(--black-color);
+    text-align: center;
+    margin: 20px 0;
+    padding: 10px 0;
+}
+
+/* ✅ สไตล์สำหรับ Section Header */
+.section-header {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+}
+
+/* 🏷️ ตาราง */
+.table-container { 
+    max-width: 900px; 
+    margin: auto;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.table-custom {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: var(--white-color);
+    box-shadow: 0 4px 10px var(--shadow-color);
+}
+
+/* ✅ ปรับสไตล์ให้ตาราง */
+.table-custom thead th {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    font-weight: 600;
+    padding: 14px;
+    text-align: center;
+}
+
+.table-custom tbody td {
+    padding: 12px;
+    text-align: left;
+    vertical-align: middle;
+}
+
+/* ✅ แถวสลับสี */
+.table-custom tbody tr:nth-of-type(even) td {
+    background-color: var(--background-color);
+}
+
+/* ✅ Highlight เมื่อ Hover */
+.table-custom tbody tr:hover td {
+    background-color: var(--hover-color);
+}
+
+/* 🎭 ปุ่มคีย์ลัด */
+.shortcut-key {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: var(--secondary-color);
+    border-radius: 12px;
+    font-size: 1.1em;
+    font-weight: 600;
+    color: var(--primary-color);
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out, background-color 0.2s;
+}
+
+.shortcut-key:hover {
+    transform: scale(1.05);
+    background-color: var(--highlight-color);
+    color: var(--white-color);
+}
+
+/* 🖱️ ไอคอนเมาส์ */
+.mouse-icon {
+    width: 48px;
+    height: 48px;
+    vertical-align: middle;
+    pointer-events: none;
+    user-select: none;
+}
+
+/* 🎭 ไอคอน Creator */
+.creator-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: var(--secondary-color);
+    box-shadow: 0 4px 6px var(--shadow-color);
+    transition: transform 0.3s ease-in-out;
+}
+
+.creator-icon:hover {
+    transform: scale(1.1) rotate(5deg);
+}

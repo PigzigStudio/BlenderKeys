@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blender Shortcuts</title>
+
+    <!-- ✅ เพิ่มไอคอนผู้สร้างในแท็บเบราว์เซอร์ -->
+    <link rel="icon" href="assets/images/Profile_002.ico" type="image/png">
+
+    <!-- ✅ โหลด Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- ✅ โหลดไฟล์ CSS -->
+    <link href="assets/css/styles.css" rel="stylesheet">
+
+    <!-- ✅ โหลด Bootstrap 5 และ Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="text-center"><i class="bi bi-keyboard"></i> Blender Shortcut Keys</h1>
+
+        <!-- 🔎 ช่องค้นหา -->
+        <div class="search-container">
+            <input type="text" id="searchInput" class="form-control" placeholder="🔍 ค้นหาคีย์ลัด..." onkeyup="searchTable()">
+        </div>
+
+        <!-- ✅ ตาราง Shortcut (แต่ละหมวดหมู่) -->
+        <div class="table-container">
+            <table class="table-custom">
+                <thead>
+                    <tr>
+                        <th colspan="2">🎯 Selection การเลือก</th>
+                    </tr>
+                </thead>
+                <tbody id="Selection-body"></tbody>
+            </table>
+        </div>
+
+        <div class="table-container">
+            <table class="table-custom">
+                <thead>
+                    <tr>
+                        <th colspan="2">📐 Transform</th>
+                    </tr>
+                </thead>
+                <tbody id="Transform-body"></tbody>
+            </table>
+        </div>
+
+        <div class="table-container">
+            <table class="table-custom">
+                <thead>
+                    <tr>
+                        <th colspan="2">🛠️ Modeling</th>
+                    </tr>
+                </thead>
+                <tbody id="Modeling-body"></tbody>
+            </table>
+        </div>
+
+        <div class="table-container">
+            <table class="table-custom">
+                <thead>
+                    <tr>
+                        <th colspan="2">✂️ Cutting</th>
+                    </tr>
+                </thead>
+                <tbody id="Cutting-body"></tbody>
+            </table>
+        </div>
+
+        <div class="table-container">
+            <table class="table-custom">
+                <thead>
+                    <tr>
+                        <th colspan="2">🧭 Navigation</th>
+                    </tr>
+                </thead>
+                <tbody id="Navigation-body"></tbody>
+            </table>
+        </div>
+
+        <!-- ✅ ไอคอนผู้สร้าง -->
+        <a href="https://web.facebook.com/profile.php?id=61558622853306" target="_blank">
+            <img src="assets/images/Profile_002.png" alt="Creator Icon" class="creator-icon">
+        </a>
+    </div>
+
+    <!-- ✅ โหลดไฟล์ JavaScript -->
+    <script src="assets/scripts/scripts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

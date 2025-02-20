@@ -1,0 +1,2260 @@
+{
+    "Selection": [
+        {
+            "description": "Vertex / Edge / Face Selection",
+            "description_thai": "เลือก จุด / เส้น / เฟซ",
+            "shortcut": [
+                {
+                    "key": "1",
+                    "class": "shortcut-key"
+                },
+                {
+                    "key": "/"
+                },
+                {
+                    "key": "2",
+                    "class": "shortcut-key"
+                },
+                {
+                    "key": "/"
+                },
+                {
+                    "key": "3",
+                    "class": "shortcut-key"
+                }
+            ]
+        },
+        {
+            "description": "Circle Select",
+            "description_thai": "เลือกด้วยวงกลม",
+            "shortcut": [
+                {
+                    "key": "C",
+                    "class": "shortcut-key"
+                },
+                {
+                    "key": "+"
+                },
+                {
+                    "key": "<img src='assets/icon/LMB_2.svg' alt='LMB+Drag' class='mouse-icon'>"
+                }
+            ]
+        },
+        {
+            "description": "Border Select",
+            "description_thai": "เลือกด้วยเส้นขอบ",
+            "shortcut": [
+                {
+                    "key": "B",
+                    "class": "shortcut-key"
+                },
+                {
+                    "key": "+"
+                },
+                {
+                    "key": "<img src='assets/icon/LMB_2.svg' alt='LMB+Drag' class='mouse-icon'>"
+                }
+            ]
+        },
+        {
+            "description": "Grow/Shrink Selection",
+            "description_thai": "ขยาย/ย่อขอบเขตการเลือก",
+            "shortcut": [
+                {
+                    "key": "Ctrl",
+                    "class": "shortcut-key"
+                },
+                {
+                    "key": "+"
+                },
+                {
+                    "key": "+ / -",
+                    "class": "shortcut-key"
+                }
+            ]
+        },
+        {
+            "description": "Select All",
+            "description_thai": "เลือกทั้งหมด",
+            "shortcut": [
+                {
+                    "key": "A",
+                    "class": "shortcut-key"
+                }
+            ]
+        },
+        {
+            "description": "Deselect All",
+            "description_thai": "ยกเลิกการเลือกทั้งหมด",
+            "shortcut": [
+                {
+                    "key": "Alt",
+                    "class": "shortcut-key"
+                },
+                {
+                    "key": "+"
+                },
+                {
+                    "key": "A",
+                    "class": "shortcut-key"
+                }
+            ]
+        },
+        {
+            "description": "Invert Select",
+            "description_thai": "เลือกตรงข้าม",
+            "shortcut": [
+                {
+                    "key": "Ctrl",
+                    "class": "shortcut-key"
+                },
+                {
+                    "key": "+"
+                },
+                {
+                    "key": "I",
+                    "class": "shortcut-key"
+                }
+            ]
+        },
+        {
+            "description": "Select Linked",
+            "description_thai": "เลือกสิ่งที่เชื่อมต่อกัน",
+            "shortcut": [
+                {
+                    "key": "Ctrl",
+                    "class": "shortcut-key"
+                },
+                {
+                    "key": "+"
+                },
+                {
+                    "key": "L",
+                    "class": "shortcut-key"
+                }
+            ]
+        },
+        {
+            "description": "Select Grouped",
+            "description_thai": "เลือกตามกลุ่ม",
+            "shortcut": [
+                {
+                    "key": "Shift",
+                    "class": "shortcut-key"
+                },
+                {
+                    "key": "+"
+                },
+                {
+                    "key": "G",
+                    "class": "shortcut-key"
+                }
+            ]
+        },
+        {
+            "description": "Select Overlapped",
+            "description_thai": "เลือกวัตถุที่ทับซ้อนกัน",
+            "shortcut": [
+                {
+                    "key": "Alt",
+                    "class": "shortcut-key"
+                },
+                {
+                    "key": "+"
+                },
+                {
+                    "key": "<img src='assets/icon/LMB_1.svg' alt='LMB' class='mouse-icon'>"
+                }
+            ]
+        },
+        {
+            "header": "Edit Mode (ภายในโหมดแก้ไข)",
+            "header_class": "section-header"
+        },
+        {
+            "description": "Loop Select",
+            "description_thai": "เลือกลูปเส้น",
+            "shortcut": [
+                {
+                    "key": "Alt",
+                    "class": "shortcut-key"
+                },
+                {
+                    "key": "+"
+                },
+                {
+                    "key": "<img src='assets/icon/LMB_1.svg' alt='LMB' class='mouse-icon'>"
+                }
+            ]
+        },
+        {
+            "description": "Ring Select",
+            "description_thai": "เลือกเส้นจากลูปเฟส",
+            "shortcut": [
+                {
+                    "key": "Ctrl",
+                    "class": "shortcut-key"
+                },
+                {
+                    "key": "+"
+                },
+                {
+                    "key": "Alt",
+                    "class": "shortcut-key"
+                },
+                {
+                    "key": "+"
+                },
+                {
+                    "key": "<img src='assets/icon/LMB_1.svg' alt='LMB' class='mouse-icon'>"
+                }
+            ]
+        },
+        {
+            "description": "Shortest Path Select",
+            "description_thai": "เลือกเส้นทางสั้นที่สุดจาก A → B",
+            "shortcut": [
+                {
+                    "key": "Ctrl",
+                    "class": "shortcut-key"
+                },
+                {
+                    "key": "+"
+                },
+                {
+                    "key": "<img src='assets/icon/LMB_1.svg' alt='LMB' class='mouse-icon'>"
+                }
+            ]
+        },
+        {
+            "description": "Select Linked under Cursor",
+            "description_thai": "เลือกสิ่งที่เชื่อมต่อกันใต้เคอร์เซอร์",
+            "shortcut": [
+                {
+                    "key": "L",
+                    "class": "shortcut-key"
+                }
+            ]
+        },
+        {
+            "description": "Select Similar Menu",
+            "description_thai": "เมนูเลือกสิ่งที่คล้ายกัน",
+            "shortcut": [
+                {
+                    "key": "Shift",
+                    "class": "shortcut-key"
+                },
+                {
+                    "key": "+"
+                },
+                {
+                    "key": "G",
+                    "class": "shortcut-key"
+                }
+            ]
+        }
+    ],
+    "Transform": [
+        {
+            "description": "Move (Grab)",
+            "description_thai": "เคลื่อนย้ายวัตถุ",
+            "shortcut": [
+                {
+                    "key": "G",
+                    "class": "shortcut-key"
+                }
+            ]
+        },
+        {
+            "description": "Move along Vertex or Edges",
+            "description_thai": "เคลื่อนย้ายตามจุดยอดหรือขอบ",
+            "shortcut": [
+                {
+                    "key": "G",
+                    "class": "shortcut-key"
+                },
+                {
+                    "key": "&",
+                    "class": ""
+                },
+                {
+                    "key": "G",
+                    "class": "shortcut-key"
+                },
+                {
+                    "key": "&",
+                    "class": ""
+                },
+                {
+                    "key": "C",
+                    "class": "shortcut-key"
+                }
+            ]
+        },
+        {
+            "description": "Scale",
+            "description_thai": "ปรับขนาด",
+            "shortcut": [
+                {
+                    "key": "S",
+                    "class": "shortcut-key"
+                }
+            ]
+        },
+        {
+            "description": "Scale along Normals",
+            "description_thai": "ปรับขนาดตามแนวปกติ",
+            "shortcut": [
+                {
+                    "key": "Alt",
+                    "class": "shortcut-key"
+                },
+                {
+                    "key": "&",
+                    "class": ""
+                },
+                {
+                    "key": "S",
+                    "class": "shortcut-key"
+                },
+                {
+                    "key": "&",
+                    "class": ""
+                },
+                {
+                    "key": "C",
+                    "class": "shortcut-key"
+                }
+            ]
+        },
+        {
+            "description": "Rotate",
+            "description_thai": "หมุนวัตถุ",
+            "shortcut": [
+                {
+                    "key": "R",
+                    "class": "shortcut-key"
+                }
+            ]
+        },
+        {
+            "description": "G/S/R along Global Axis",
+            "description_thai": "เคลื่อนย้าย/ปรับขนาด/หมุน ตามแกนโลก",
+            "shortcut": [
+                {
+                    "key": "G / S / R",
+                    "class": "shortcut-key"
+                },
+                {
+                    "key": "&",
+                    "class": ""
+                },
+                {
+                    "key": "X / Y / Z",
+                    "class": "shortcut-key"
+                }
+            ]
+        },
+        {
+            "description": "G/S/R along Local Axis",
+            "description_thai": "เคลื่อนย้าย/ปรับขนาด/หมุน ตามแกนวัตถุ",
+            "shortcut": [
+                {
+                    "key": "G / S / R",
+                    "class": "shortcut-key"
+                },
+                {
+                    "key": "&",
+                    "class": ""
+                },
+                {
+                    "key": "XX / YY / ZZ",
+                    "class": "shortcut-key"
+                }
+            ]
+        },
+        {
+            "description": "G/S/R Lock Axis",
+            "description_thai": "ล็อกแกนในการเคลื่อนย้าย/ปรับขนาด/หมุน",
+            "shortcut": [
+                {
+                    "key": "&",
+                    "class": ""
+                },
+                {
+                    "key": "Shift",
+                    "class": "shortcut-key"
+                },
+                {
+                    "key": "&",
+                    "class": ""
+                },
+                {
+                    "key": "X / Y / Z",
+                    "class": "shortcut-key"
+                }
+            ]
+        },
+        {
+            "description": "Apply Transform",
+            "description_thai": "ใช้การเปลี่ยนแปลงปัจจุบันเป็นค่าเริ่มต้น",
+            "shortcut": [
+                {
+                    "key": "Ctrl",
+                    "class": "shortcut-key"
+                },
+                {
+                    "key": "&",
+                    "class": ""
+                },
+                {
+                    "key": "A",
+                    "class": "shortcut-key"
+                }
+            ]
+        },
+        {
+            "description": "Reset Transform",
+            "description_thai": "รีเซ็ตตำแหน่ง/ขนาด/การหมุน",
+            "shortcut": [
+                {
+                    "key": "Alt",
+                    "class": "shortcut-key"
+                },
+                {
+                    "key": "&",
+                    "class": ""
+                },
+                {
+                    "key": "G / S / R",
+                    "class": "shortcut-key"
+                }
+            ]
+        },
+        {
+            "description": "Duplicate",
+            "description_thai": "ทำสำเนาวัตถุ",
+            "shortcut": [
+                {
+                    "key": "Shift",
+                    "class": "shortcut-key"
+                },
+                {
+                    "key": "&",
+                    "class": ""
+                },
+                {
+                    "key": "D",
+                    "class": "shortcut-key"
+                }
+            ]
+        },
+        {
+            "description": "Duplicate Linked",
+            "description_thai": "ทำสำเนาวัตถุแบบเชื่อมโยง",
+            "shortcut": [
+                {
+                    "key": "Alt",
+                    "class": "shortcut-key"
+                },
+                {
+                    "key": "&",
+                    "class": ""
+                },
+                {
+                    "key": "D",
+                    "class": "shortcut-key"
+                }
+            ]
+        }
+    ],
+    "Modeling": [
+        {
+            "description": "Extrude",
+            "description_thai": "ยื่นพื้นผิวออก",
+            "shortcut": [
+                {
+                    "key": "E",
+                    "class": "shortcut-key"
+                }
+            ]
+        },
+        {
+            "description": "Extrude Menu",
+            "description_thai": "เมนูยื่นพื้นผิวออก",
+            "shortcut": [
+                {
+                    "key": "Alt",
+                    "class": "shortcut-key"
+                },
+                {
+                    "key": "+"
+                },
+                {
+                    "key": "E",
+                    "class": "shortcut-key"
+                }
+            ]
+        },
+        {
+            "description": "Vertex/Edge/Face Menu",
+            "description_thai": "เมนูจุดยอด/ขอบ/เฟส",
+            "shortcut": [
+                {
+                    "key": "Ctrl",
+                    "class": "shortcut-key"
+                },
+                {
+                    "key": "+"
+                },
+                {
+                    "key": "E",
+                    "class": "shortcut-key"
+                }
+            ]
+        },
+        {
+            "description": "Click Extrude",
+            "description_thai": "คลิกเพื่อยื่นพื้นผิวออก",
+            "shortcut": [
+                {
+                    "key": "E",
+                    "class": "shortcut-key"
+                },
+                {
+                    "key": "&"
+                },
+                {
+                    "key": "Ctrl",
+                    "class": "shortcut-key"
+                },
+                {
+                    "key": "+"
+                },
+                {
+                    "key": "<img src='assets/icon/RMB_1.svg' alt='RMB' class='mouse-icon'>"
+                }
+            ]
+        },
+        {
+            "description": "Bevel",
+            "description_thai": "มุมลาด",
+            "shortcut": [
+                {
+                    "key": "Ctrl",
+                    "class": "shortcut-key"
+                },
+                {
+                    "key": "+"
+                },
+                {
+                    "key": "B",
+                    "class": "shortcut-key"
+                },
+                {
+                    "key": "+"
+                },
+                {
+                    "key": "<img src='assets/icon/MMB_1.svg' alt='MMB' class='mouse-icon'>"
+                }
+            ]
+        },
+        {
+            "description": "Inset",
+            "description_thai": "สร้างพื้นผิวด้านใน",
+            "shortcut": [
+                {
+                    "key": "I",
+                    "class": "shortcut-key"
+                }
+            ]
+        },
+        {
+            "description": "Inset Individual Faces",
+            "description_thai": "สร้างพื้นผิวด้านในแต่ละเฟส",
+            "shortcut": [
+                {
+                    "key": "I",
+                    "class": "shortcut-key"
+                },
+                {
+                    "key": "&"
+                },
+                {
+                    "key": "I",
+                    "class": "shortcut-key"
+                }
+            ]
+        },
+        {
+            "description": "Fill Faces",
+            "description_thai": "เติมเฟส",
+            "shortcut": [
+                {
+                    "key": "F",
+                    "class": "shortcut-key"
+                }
+            ]
+        },
+        {
+            "description": "Connect Vertex Path",
+            "description_thai": "เชื่อมต่อจุดยอด",
+            "shortcut": [
+                {
+                    "key": "J",
+                    "class": "shortcut-key"
+                }
+            ]
+        },
+        {
+            "description": "Rip",
+            "description_thai": "แยกส่วน",
+            "shortcut": [
+                {
+                    "key": "V",
+                    "class": "shortcut-key"
+                }
+            ]
+        },
+        {
+            "description": "Split",
+            "description_thai": "แบ่ง",
+            "shortcut": [
+                {
+                    "key": "Y",
+                    "class": "shortcut-key"
+                }
+            ]
+        },
+        {
+            "description": "Merge",
+            "description_thai": "รวมเข้าด้วยกัน",
+            "shortcut": [
+                {
+                    "key": "M",
+                    "class": "shortcut-key"
+                }
+            ]
+        },
+        {
+            "description": "Normals Menu",
+            "description_thai": "เมนูแนวตั้งฉาก",
+            "shortcut": [
+                {
+                    "key": "Alt",
+                    "class": "shortcut-key"
+                },
+                {
+                    "key": "+"
+                },
+                {
+                    "key": "N",
+                    "class": "shortcut-key"
+                }
+            ]
+        },
+        {
+            "description": "Separate",
+            "description_thai": "แยกส่วนออก",
+            "shortcut": [
+                {
+                    "key": "P",
+                    "class": "shortcut-key"
+                }
+            ]
+        },
+        {
+            "description": "Join",
+            "description_thai": "รวมวัตถุ",
+            "shortcut": [
+                {
+                    "key": "Ctrl",
+                    "class": "shortcut-key"
+                },
+                {
+                    "key": "+"
+                },
+                {
+                    "key": "J",
+                    "class": "shortcut-key"
+                }
+            ]
+        }
+    ],
+    "Cutting": [
+        {
+            "description": "Loopcut",
+            "description_thai": "การตัดลูป",
+            "shortcut": [
+                {
+                    "key": "Ctrl",
+                    "class": "shortcut-key"
+                },
+                {
+                    "key": "+"
+                },
+                {
+                    "key": "R",
+                    "class": "shortcut-key"
+                },
+                {
+                    "key": "+"
+                },
+                {
+                    "key": "<img src='assets/icon/MMB_1.svg' alt='MMB' class='mouse-icon'>"
+                }
+            ]
+        },
+        {
+            "description": "Loopcut Even",
+            "description_thai": "การตัดลูปแบบสมมาตร",
+            "shortcut": [
+                {
+                    "key": "Ctrl",
+                    "class": "shortcut-key"
+                },
+                {
+                    "key": "+"
+                },
+                {
+                    "key": "R",
+                    "class": "shortcut-key"
+                },
+                {
+                    "key": "&"
+                },
+                {
+                    "key": "E",
+                    "class": "shortcut-key"
+                }
+            ]
+        },
+        {
+            "description": "Loopcut Even Flip",
+            "description_thai": "การตัดลูปแบบสมมาตร (กลับด้าน)",
+            "shortcut": [
+                {
+                    "key": "&"
+                },
+                {
+                    "key": "F",
+                    "class": "shortcut-key"
+                }
+            ]
+        },
+        {
+            "description": "Knife Cut",
+            "description_thai": "การตัดด้วยมีด",
+            "shortcut": [
+                {
+                    "key": "K",
+                    "class": "shortcut-key"
+                }
+            ]
+        },
+        {
+            "description": "Knife Cut Through",
+            "description_thai": "การตัดด้วยมีดแบบทะลุ",
+            "shortcut": [
+                {
+                    "key": "K",
+                    "class": "shortcut-key"
+                },
+                {
+                    "key": "&"
+                },
+                {
+                    "key": "C",
+                    "class": "shortcut-key"
+                }
+            ]
+        },
+        {
+            "description": "Knife Cut Angle Constraint",
+            "description_thai": "การตัดด้วยมีดแบบจำกัดมุม",
+            "shortcut": [
+                {
+                    "key": "K",
+                    "class": "shortcut-key"
+                },
+                {
+                    "key": "&"
+                },
+                {
+                    "key": "A",
+                    "class": "shortcut-key"
+                }
+            ]
+        },
+        {
+            "description": "Knife Cut Snap on Mid",
+            "description_thai": "การตัดด้วยมีดโดยยึดจุดกึ่งกลาง",
+            "shortcut": [
+                {
+                    "key": "K",
+                    "class": "shortcut-key"
+                },
+                {
+                    "key": "&"
+                },
+                {
+                    "key": "Shift",
+                    "class": "shortcut-key"
+                }
+            ]
+        }
+    ],
+    "Navigation": [
+        {
+            "description": "Center Selected",
+            "description_thai": "จัดกึ่งกลางที่เลือก",
+            "shortcut": [
+                {
+                    "key": "Numpad ,",
+                    "class": "shortcut-key"
+                }
+            ]
+        },
+        {
+            "description": "Crop Zoom",
+            "description_thai": "ซูมแบบครอบ",
+            "shortcut": [
+                {
+                    "key": "Shift",
+                    "class": "shortcut-key"
+                },
+                {
+                    "key": "+"
+                },
+                {
+                    "key": "B",
+                    "class": "shortcut-key"
+                }
+            ]
+        },
+        {
+            "description": "Hide",
+            "description_thai": "ซ่อน",
+            "shortcut": [
+                {
+                    "key": "H",
+                    "class": "shortcut-key"
+                }
+            ]
+        },
+        {
+            "description": "Unhide",
+            "description_thai": "ยกเลิกการซ่อน",
+            "shortcut": [
+                {
+                    "key": "Alt",
+                    "class": "shortcut-key"
+                },
+                {
+                    "key": "+"
+                },
+                {
+                    "key": "H",
+                    "class": "shortcut-key"
+                }
+            ]
+        },
+        {
+            "description": "Isolation View",
+            "description_thai": "มุมมองแยก",
+            "shortcut": [
+                {
+                    "key": "/",
+                    "class": "shortcut-key"
+                }
+            ]
+        },
+        {
+            "description": "Isolation Crop View",
+            "description_thai": "มุมมองแยกแบบครอบ",
+            "shortcut": [
+                {
+                    "key": "Alt",
+                    "class": "shortcut-key"
+                },
+                {
+                    "key": "+"
+                },
+                {
+                    "key": "B",
+                    "class": "shortcut-key"
+                }
+            ]
+        },
+        {
+            "description": "Shading Menu",
+            "description_thai": "เมนูการแรเงา",
+            "shortcut": [
+                {
+                    "key": "Z",
+                    "class": "shortcut-key"
+                },
+                {
+                    "key": "+"
+                },
+                {
+                    "key": "<img src='assets/icon/Drag_1.svg' alt='Drag' class='mouse-icon'>"
+                }
+            ]
+        },
+        {
+            "description": "Top View",
+            "description_thai": "มุมมองด้านบน",
+            "shortcut": [
+                {
+                    "key": "7",
+                    "class": "shortcut-key"
+                }
+            ]
+        },
+        {
+            "description": "Front View",
+            "description_thai": "มุมมองด้านหน้า",
+            "shortcut": [
+                {
+                    "key": "1",
+                    "class": "shortcut-key"
+                }
+            ]
+        },
+        {
+            "description": "Right View",
+            "description_thai": "มุมมองด้านขวา",
+            "shortcut": [
+                {
+                    "key": "3",
+                    "class": "shortcut-key"
+                }
+            ]
+        },
+        {
+            "description": "Ortho View",
+            "description_thai": "มุมมองแบบออโธ",
+            "shortcut": [
+                {
+                    "key": "5",
+                    "class": "shortcut-key"
+                }
+            ]
+        },
+        {
+            "description": "Bottom View",
+            "description_thai": "มุมมองด้านล่าง",
+            "shortcut": [
+                {
+                    "key": "Ctrl",
+                    "class": "shortcut-key"
+                },
+                {
+                    "key": "+"
+                },
+                {
+                    "key": "Numpad 1",
+                    "class": "shortcut-key"
+                }
+            ]
+        },
+        {
+            "description": "Rotate View",
+            "description_thai": "หมุนมุมมอง",
+            "shortcut": [
+                {
+                    "key": "2",
+                    "class": "shortcut-key"
+                },
+                {
+                    "key": ","
+                },
+                {
+                    "key": "4",
+                    "class": "shortcut-key"
+                },
+                {
+                    "key": ","
+                },
+                {
+                    "key": "6",
+                    "class": "shortcut-key"
+                },
+                {
+                    "key": ","
+                },
+                {
+                    "key": "8",
+                    "class": "shortcut-key"
+                }
+            ]
+        },
+        {
+            "description": "Opposite View",
+            "description_thai": "มุมมองตรงข้าม",
+            "shortcut": [
+                {
+                    "key": "9",
+                    "class": "shortcut-key"
+                },
+                {
+                    "key": ","
+                },
+                {
+                    "key": "3",
+                    "class": "shortcut-key"
+                }
+            ]
+        },
+        {
+            "description": "Opposite View",
+            "description_thai": "มุมมองตรงข้าม",
+            "shortcut": [
+                {
+                    "key": "Ctrl",
+                    "class": "shortcut-key"
+                },
+                {
+                    "key": "+"
+                },
+                {
+                    "key": "Numpad 1 / 3 / 7",
+                    "class": "shortcut-key"
+                }
+            ]
+        },
+        {
+            "description": "Align View to Face",
+            "description_thai": "จัดแนวมุมมองให้ตรงกับเฟส",
+            "shortcut": [
+                {
+                    "key": "Shift",
+                    "class": "shortcut-key"
+                },
+                {
+                    "key": "+"
+                },
+                {
+                    "key": "Numpad 1 / 3 / 7",
+                    "class": "shortcut-key"
+                }
+            ]
+        }
+    ],
+    "General": [
+        {
+            "description": "Add Object",
+            "description_thai": "เพิ่มวัตถุ",
+            "shortcut": [
+                {
+                    "key": "Shift",
+                    "class": "shortcut-key"
+                },
+                {
+                    "key": "+"
+                },
+                {
+                    "key": "A",
+                    "class": "shortcut-key"
+                }
+            ]
+        },
+        {
+            "description": "Delete",
+            "description_thai": "ลบ",
+            "shortcut": [
+                {
+                    "key": "X",
+                    "class": "shortcut-key"
+                }
+            ]
+        },
+        {
+            "description": "Cursor Place",
+            "description_thai": "วางเคอร์เซอร์",
+            "shortcut": [
+                {
+                    "key": "Shift",
+                    "class": "shortcut-key"
+                },
+                {
+                    "key": "+"
+                },
+                {
+                    "key": "<img src='assets/icon/RMB_1.svg' alt='RMB' class='mouse-icon'>"
+                }
+            ]
+        },
+        {
+            "description": "Cursor Menu",
+            "description_thai": "เมนูเคอร์เซอร์",
+            "shortcut": [
+                {
+                    "key": "Shift",
+                    "class": "shortcut-key"
+                },
+                {
+                    "key": "+"
+                },
+                {
+                    "key": "S",
+                    "class": "shortcut-key"
+                }
+            ]
+        },
+        {
+            "description": "Reset Cursor",
+            "description_thai": "รีเซ็ทเคอร์เซอร์",
+            "shortcut": [
+                {
+                    "key": "Shift",
+                    "class": "shortcut-key"
+                },
+                {
+                    "key": "+"
+                },
+                {
+                    "key": "C",
+                    "class": "shortcut-key"
+                }
+            ]
+        },
+        {
+            "description": "Quick Menu",
+            "description_thai": "เมนูด่วน",
+            "shortcut": [
+                {
+                    "key": "Q",
+                    "class": "shortcut-key"
+                }
+            ]
+        }
+    ],
+    "Relations": [
+        {
+            "description": "Set Parent",
+            "description_thai": "ตั้งค่า Parent",
+            "shortcut": [
+                {
+                    "key": "Ctrl",
+                    "class": "shortcut-key"
+                },
+                {
+                    "key": "+"
+                },
+                {
+                    "key": "P",
+                    "class": "shortcut-key"
+                }
+            ]
+        },
+        {
+            "description": "Clear Parent",
+            "description_thai": "ยกเลิก Parent",
+            "shortcut": [
+                {
+                    "key": "Alt",
+                    "class": "shortcut-key"
+                },
+                {
+                    "key": "+"
+                },
+                {
+                    "key": "P",
+                    "class": "shortcut-key"
+                }
+            ]
+        },
+        {
+            "description": "Link/Transfer Data",
+            "description_thai": "ลิงก์/ถ่ายโอนข้อมูล",
+            "shortcut": [
+                {
+                    "key": "Ctrl",
+                    "class": "shortcut-key"
+                },
+                {
+                    "key": "+"
+                },
+                {
+                    "key": "L",
+                    "class": "shortcut-key"
+                }
+            ]
+        }
+    ],
+    "Camera": [
+        {
+            "description": "Camera View",
+            "description_thai": "มุมกล้อง",
+            "shortcut": [
+                {
+                    "key": "Numpad 0",
+                    "class": "shortcut-key"
+                }
+            ]
+        },
+        {
+            "description": "Set Active Camera",
+            "description_thai": "ตั้งค่ากล้องที่ใช้งาน",
+            "shortcut": [
+                {
+                    "key": "Ctrl",
+                    "class": "shortcut-key"
+                },
+                {
+                    "key": "+"
+                },
+                {
+                    "key": "Numpad 0",
+                    "class": "shortcut-key"
+                }
+            ]
+        },
+        {
+            "description": "Align Camera to View",
+            "description_thai": "จัดมุมกล้องให้ตรงกับมุมมอง",
+            "shortcut": [
+                {
+                    "key": "Ctrl",
+                    "class": "shortcut-key"
+                },
+                {
+                    "key": "+"
+                },
+                {
+                    "key": "Alt",
+                    "class": "shortcut-key"
+                },
+                {
+                    "key": "+"
+                },
+                {
+                    "key": "Numpad 0",
+                    "class": "shortcut-key"
+                }
+            ]
+        },
+        {
+            "description": "Align Camera to Selected Face",
+            "description_thai": "จัดกล้องให้ตรงกับเฟสเลือก",
+            "shortcut": [
+                {
+                    "key": "Shift",
+                    "class": "shortcut-key"
+                },
+                {
+                    "key": "+"
+                },
+                {
+                    "key": "Numpad 7",
+                    "class": "shortcut-key"
+                }
+            ]
+        }
+    ],
+    "Rendering": [
+        {
+            "description": "Render Image",
+            "description_thai": "เรนเดอร์ภาพ",
+            "shortcut": [
+                {
+                    "key": "F12",
+                    "class": "shortcut-key"
+                }
+            ]
+        },
+        {
+            "description": "Render Animation",
+            "description_thai": "เรนเดอร์แอนิเมชั่น",
+            "shortcut": [
+                {
+                    "key": "Ctrl",
+                    "class": "shortcut-key"
+                },
+                {
+                    "key": "+"
+                },
+                {
+                    "key": "F12",
+                    "class": "shortcut-key"
+                }
+            ]
+        },
+        {
+            "description": "Set Render Region",
+            "description_thai": "ตั้งค่าพื้นที่เรนเดอร์",
+            "shortcut": [
+                {
+                    "key": "Ctrl",
+                    "class": "shortcut-key"
+                },
+                {
+                    "key": "+"
+                },
+                {
+                    "key": "B",
+                    "class": "shortcut-key"
+                }
+            ]
+        },
+        {
+            "description": "Reset Render Region",
+            "description_thai": "รีเซ็ทพื้นที่เรนเดอร์",
+            "shortcut": [
+                {
+                    "key": "Ctrl",
+                    "class": "shortcut-key"
+                },
+                {
+                    "key": "+"
+                },
+                {
+                    "key": "Alt",
+                    "class": "shortcut-key"
+                },
+                {
+                    "key": "+"
+                },
+                {
+                    "key": "B",
+                    "class": "shortcut-key"
+                }
+            ]
+        }
+    ],
+    "UI": [
+        {
+            "description": "Maximize",
+            "description_thai": "ขยายให้เต็มหน้าจอ",
+            "shortcut": [
+                {
+                    "key": "Ctrl",
+                    "class": "shortcut-key"
+                },
+                {
+                    "key": "+"
+                },
+                {
+                    "key": "Spacebar",
+                    "class": "shortcut-key"
+                }
+            ]
+        },
+        {
+            "description": "Orthographic projection",
+            "description_thai": "มุมมองเชิงเส้นฉาก",
+            "shortcut": [
+                {
+                    "key": "Ctrl",
+                    "class": "shortcut-key"
+                },
+                {
+                    "key": "+"
+                },
+                {
+                    "key": "Alt",
+                    "class": "shortcut-key"
+                },
+                {
+                    "key": "+"
+                },
+                {
+                    "key": "Q",
+                    "class": "shortcut-key"
+                }
+            ]
+        },
+        {
+            "description": "Toolbar Panel",
+            "description_thai": "แผงเครื่องมือ",
+            "shortcut": [
+                {
+                    "key": "T",
+                    "class": "shortcut-key"
+                }
+            ]
+        },
+        {
+            "description": "Sidebar Panel",
+            "description_thai": "แผงด้านข้าง",
+            "shortcut": [
+                {
+                    "key": "N",
+                    "class": "shortcut-key"
+                }
+            ]
+        }
+    ],
+    "Bool-Tool": [
+        {
+            "description": "Bool-Tool Menu",
+            "shortcut": [
+                {
+                    "key": "Ctrl",
+                    "class": "shortcut-key"
+                },
+                {
+                    "key": "+"
+                },
+                {
+                    "key": "Shift",
+                    "class": "shortcut-key"
+                },
+                {
+                    "key": "+"
+                },
+                {
+                    "key": "B",
+                    "class": "shortcut-key"
+                }
+            ]
+        },
+        {
+            "description": "Difference",
+            "shortcut": [
+                {
+                    "key": "Ctrl",
+                    "class": "shortcut-key"
+                },
+                {
+                    "key": "+"
+                },
+                {
+                    "key": "Numpad -",
+                    "class": "shortcut-key"
+                }
+            ]
+        },
+        {
+            "description": "Union",
+            "shortcut": [
+                {
+                    "key": "Ctrl",
+                    "class": "shortcut-key"
+                },
+                {
+                    "key": "+"
+                },
+                {
+                    "key": "Numpad +",
+                    "class": "shortcut-key"
+                }
+            ]
+        },
+        {
+            "description": "Intersection",
+            "shortcut": [
+                {
+                    "key": "Ctrl",
+                    "class": "shortcut-key"
+                },
+                {
+                    "key": "+"
+                },
+                {
+                    "key": "Numpad *",
+                    "class": "shortcut-key"
+                }
+            ]
+        },
+        {
+            "description": "Slice",
+            "shortcut": [
+                {
+                    "key": "Ctrl",
+                    "class": "shortcut-key"
+                },
+                {
+                    "key": "+"
+                },
+                {
+                    "key": "Numpad /",
+                    "class": "shortcut-key"
+                }
+            ]
+        }
+    ],
+"Nodes": [
+        {
+            "description": "Group",
+            "description_thai": "จัดกลุ่ม",
+            "shortcut": [
+                {
+                    "key": "Ctrl",
+                    "class": "shortcut-key"
+                },
+                {
+                    "key": "+"
+                },
+                {
+                    "key": "G",
+                    "class": "shortcut-key"
+                }
+            ]
+        },
+        {
+            "description": "Ungroup",
+            "description_thai": "ยกเลิกการจัดกลุ่ม",
+            "shortcut": [
+                {
+                    "key": "Ctrl",
+                    "class": "shortcut-key"
+                },
+                {
+                    "key": "+"
+                },
+                {
+                    "key": "Alt",
+                    "class": "shortcut-key"
+                },
+                {
+                    "key": "+"
+                },
+                {
+                    "key": "G",
+                    "class": "shortcut-key"
+                }
+            ]
+        },
+        {
+            "description": "Edit Group Toggle",
+            "description_thai": "สลับการแก้ไขกลุ่ม",
+            "shortcut": [
+                {
+                    "key": "Tab",
+                    "class": "shortcut-key"
+                }
+            ]
+        },
+        {
+            "description": "Join in new Frame",
+            "description_thai": "รวมในเฟรมใหม่",
+            "shortcut": [
+                {
+                    "key": "Ctrl",
+                    "class": "shortcut-key"
+                },
+                {
+                    "key": "+"
+                },
+                {
+                    "key": "J",
+                    "class": "shortcut-key"
+                }
+            ]
+        },
+        {
+            "description": "Cut Links",
+            "description_thai": "ตัดการเชื่อมต่อ",
+            "shortcut": [
+                {
+                    "key": "Ctrl",
+                    "class": "shortcut-key"
+                },
+                {
+                    "key": "+"
+                },
+                {
+                    "key": "<img src='assets/icon/RMB_1.svg' alt='RMB' class='mouse-icon'>"
+                },
+                {
+                    "key": "+"
+                },
+                {
+                    "key": "<img src='assets/icon/Drag_1.svg' alt='Drag' class='mouse-icon'>"
+                }
+            ]
+        },
+        {
+            "description": "Insert Reroute",
+            "description_thai": "แทรกการจัดเส้นทางใหม่",
+            "shortcut": [
+                {
+                    "key": "Shift",
+                    "class": "shortcut-key"
+                },
+                {
+                    "key": "+"
+                },
+                {
+                    "key": "<img src='assets/icon/RMB_1.svg' alt='RMB' class='mouse-icon'>"
+                },
+                {
+                    "key": "+"
+                },
+                {
+                    "key": "<img src='assets/icon/Drag_1.svg' alt='Drag' class='mouse-icon'>"
+                }
+            ]
+        },
+        {
+            "description": "Switch Inputs",
+            "description_thai": "สลับการป้อนข้อมูล",
+            "shortcut": [
+                {
+                    "key": "Alt",
+                    "class": "shortcut-key"
+                },
+                {
+                    "key": "+"
+                },
+                {
+                    "key": "S",
+                    "class": "shortcut-key"
+                }
+            ]
+        }
+    ],
+"Node Wrangler": [
+        {
+            "description": "Preview Selected Node",
+            "description_thai": "ดูตัวอย่างโหนดที่เลือก",
+            "shortcut": [
+                {
+                    "key": "Ctrl",
+                    "class": "shortcut-key"
+                },
+                {
+                    "key": "+"
+                },
+                {
+                    "key": "Shift",
+                    "class": "shortcut-key"
+                },
+                {
+                    "key": "+"
+                },
+                {
+                    "key": "<img src='assets/icon/LMB_1.svg' alt='LMB' class='mouse-icon'>"
+                }
+            ]
+        },
+        {
+            "description": "Context Menu",
+            "description_thai": "เมนูบริบท",
+            "shortcut": [
+                {
+                    "key": "Shift",
+                    "class": "shortcut-key"
+                },
+                {
+                    "key": "+"
+                },
+                {
+                    "key": "W",
+                    "class": "shortcut-key"
+                }
+            ]
+        },
+        {
+            "description": "Add Texture Setup",
+            "description_thai": "เพิ่มการตั้งค่าเทกซ์เจอร์",
+            "shortcut": [
+                {
+                    "key": "Ctrl",
+                    "class": "shortcut-key"
+                },
+                {
+                    "key": "+"
+                },
+                {
+                    "key": "T",
+                    "class": "shortcut-key"
+                }
+            ]
+        }
+    ],
+"Compositing": [
+        {
+            "description": "Move Background Image",
+            "description_thai": "ย้ายภาพพื้นหลัง",
+            "shortcut": [
+                {
+                    "key": "Alt",
+                    "class": "shortcut-key"
+                },
+                {
+                    "key": "+"
+                },
+                {
+                    "key": "<img src='assets/icon/MMB_1.svg' alt='MMB' class='mouse-icon'>"
+                }
+            ]
+        },
+        {
+            "description": "Zoom Out Background Image",
+            "description_thai": "ย่อภาพพื้นหลัง",
+            "shortcut": [
+                {
+                    "key": "V",
+                    "class": "shortcut-key"
+                }
+            ]
+        },
+        {
+            "description": "Zoom In Background Image",
+            "description_thai": "ขยายภาพพื้นหลัง",
+            "shortcut": [
+                {
+                    "key": "Alt",
+                    "class": "shortcut-key"
+                },
+                {
+                    "key": "+"
+                },
+                {
+                    "key": "V",
+                    "class": "shortcut-key"
+                }
+            ]
+        }
+    ],
+    "UV Editor": [
+        {
+            "description": "Mark Seam",
+            "description_thai": "ทำเครื่องหมายรอยต่อ",
+            "shortcut": [
+                {
+                    "key": "Ctrl",
+                    "class": "shortcut-key"
+                },
+                {
+                    "key": "+"
+                },
+                {
+                    "key": "E",
+                    "class": "shortcut-key"
+                }
+            ]
+        },
+        {
+            "description": "Select Split",
+            "description_thai": "เลือกแยก",
+            "shortcut": [
+                {
+                    "key": "Y",
+                    "class": "shortcut-key"
+                }
+            ]
+        },
+        {
+            "description": "Grow/Shrink Selection",
+            "description_thai": "ขยาย/ย่อขอบเขตการเลือก",
+            "shortcut": [
+                {
+                    "key": "Ctrl",
+                    "class": "shortcut-key"
+                },
+                {
+                    "key": "+"
+                },
+                {
+                    "key": "+ / -",
+                    "class": "shortcut-key"
+                }
+            ]
+        },
+        {
+            "description": "Stitch",
+            "description_thai": "เย็บ",
+            "shortcut": [
+                {
+                    "key": "Alt",
+                    "class": "shortcut-key"
+                },
+                {
+                    "key": "+"
+                },
+                {
+                    "key": "V",
+                    "class": "shortcut-key"
+                }
+            ]
+        },
+        {
+            "description": "Pin",
+            "description_thai": "ปักหมุด",
+            "shortcut": [
+                {
+                    "key": "P",
+                    "class": "shortcut-key"
+                }
+            ]
+        },
+        {
+            "description": "Unpin",
+            "description_thai": "ยกเลิกการปักหมุด",
+            "shortcut": [
+                {
+                    "key": "Alt",
+                    "class": "shortcut-key"
+                },
+                {
+                    "key": "+"
+                },
+                {
+                    "key": "P",
+                    "class": "shortcut-key"
+                }
+            ]
+        }
+    ],
+    "Animation General": [
+        {
+            "description": "Play/Stop",
+            "description_thai": "เล่น/หยุด",
+            "shortcut": [
+                {
+                    "key": "Space",
+                    "class": "shortcut-key"
+                }
+            ]
+        },
+        {
+            "description": "Insert Keyframe Menu",
+            "description_thai": "เมนูเพิ่มคีย์เฟรม",
+            "shortcut": [
+                {
+                    "key": "K",
+                    "class": "shortcut-key"
+                }
+            ]
+        },
+        {
+            "description": "Insert Keyframe",
+            "description_thai": "เพิ่มคีย์เฟรม",
+            "shortcut": [
+                {
+                    "key": "I",
+                    "class": "shortcut-key"
+                }
+            ]
+        },
+        {
+            "description": "Delete Keyframe(s)",
+            "description_thai": "ลบคีย์เฟรม",
+            "shortcut": [
+                {
+                    "key": "Alt",
+                    "class": "shortcut-key"
+                },
+                {
+                    "key": "+"
+                },
+                {
+                    "key": "I",
+                    "class": "shortcut-key"
+                }
+            ]
+        },
+        {
+            "description": "List of Bones under Cursor",
+            "description_thai": "รายการกระดูกใต้เคอร์เซอร์",
+            "shortcut": [
+                {
+                    "key": "Alt",
+                    "class": "shortcut-key"
+                },
+                {
+                    "key": "+"
+                },
+                {
+                    "key": "<img src='assets/icon/LMB_1.svg' alt='LMB' class='mouse-icon'>"
+                }
+            ]
+        }
+    ],
+"Animation Timeline": [
+        {
+            "description": "Jump to Start/End",
+            "description_thai": "กระโดดไปจุดเริ่มต้น/สิ้นสุด",
+            "shortcut": [
+                {
+                    "key": "Shift",
+                    "class": "shortcut-key"
+                },
+                {
+                    "key": "+"
+                },
+                {
+                    "key": "Left / Right",
+                    "class": "shortcut-key"
+                }
+            ]
+        },
+        {
+            "description": "Toggle Frames / Seconds",
+            "description_thai": "สลับเฟรม/วินาที",
+            "shortcut": [
+                {
+                    "key": "Ctrl",
+                    "class": "shortcut-key"
+                },
+                {
+                    "key": "+"
+                },
+                {
+                    "key": "T",
+                    "class": "shortcut-key"
+                }
+            ]
+        },
+        {
+            "description": "Mirror Keyframes",
+            "description_thai": "กระจกคีย์เฟรม",
+            "shortcut": [
+                {
+                    "key": "Ctrl",
+                    "class": "shortcut-key"
+                },
+                {
+                    "key": "+"
+                },
+                {
+                    "key": "M",
+                    "class": "shortcut-key"
+                }
+            ]
+        },
+        {
+            "description": "Grow/Shrink Selection",
+            "description_thai": "ขยาย/ย่อการเลือก",
+            "shortcut": [
+                {
+                    "key": "Ctrl",
+                    "class": "shortcut-key"
+                },
+                {
+                    "key": "+"
+                },
+                {
+                    "key": "+ / -",
+                    "class": "shortcut-key"
+                }
+            ]
+        },
+        {
+            "description": "Set Handle Type",
+            "description_thai": "ตั้งค่าประเภทมือจับ",
+            "shortcut": [
+                {
+                    "key": "V",
+                    "class": "shortcut-key"
+                }
+            ]
+        },
+        {
+            "description": "Set Interpolation",
+            "description_thai": "ตั้งค่าการแทรก",
+            "shortcut": [
+                {
+                    "key": "T",
+                    "class": "shortcut-key"
+                }
+            ]
+        }
+    ],
+    "Graph Editor": [
+        {
+            "description": "Add F-Curve Modifier",
+            "description_thai": "เพิ่มตัวปรับค่าเส้นโค้ง F",
+            "shortcut": [
+                {
+                    "key": "Shift",
+                    "class": "shortcut-key"
+                },
+                {
+                    "key": "+"
+                },
+                {
+                    "key": "Ctrl",
+                    "class": "shortcut-key"
+                },
+                {
+                    "key": "+"
+                },
+                {
+                    "key": "M",
+                    "class": "shortcut-key"
+                }
+            ]
+        },
+        {
+            "description": "Blend Curve",
+            "description_thai": "ผสมเส้นโค้ง",
+            "shortcut": [
+                {
+                    "key": "Alt",
+                    "class": "shortcut-key"
+                },
+                {
+                    "key": "+"
+                },
+                {
+                    "key": "D",
+                    "class": "shortcut-key"
+                }
+            ]
+        },
+        {
+            "description": "Toggle Channel Selection",
+            "description_thai": "สลับการเลือกช่อง",
+            "shortcut": [
+                {
+                    "key": "Shift",
+                    "class": "shortcut-key"
+                },
+                {
+                    "key": "+"
+                },
+                {
+                    "key": "W",
+                    "class": "shortcut-key"
+                }
+            ]
+        },
+        {
+            "description": "Smooth Keys",
+            "description_thai": "ทำให้คีย์เรียบ",
+            "shortcut": [
+                {
+                    "key": "Alt",
+                    "class": "shortcut-key"
+                },
+                {
+                    "key": "+"
+                },
+                {
+                    "key": "O",
+                    "class": "shortcut-key"
+                }
+            ]
+        },
+        {
+            "description": "Set Keyframe Easing Type",
+            "description_thai": "ตั้งค่าประเภทการคลายคีย์เฟรม",
+            "shortcut": [
+                {
+                    "key": "Ctrl",
+                    "class": "shortcut-key"
+                },
+                {
+                    "key": "+"
+                },
+                {
+                    "key": "E",
+                    "class": "shortcut-key"
+                }
+            ]
+        },
+        {
+            "description": "Smooth Curve",
+            "description_thai": "ทำให้เส้นโค้งเรียบ",
+            "shortcut": [
+                {
+                    "key": "Alt",
+                    "class": "shortcut-key"
+                },
+                {
+                    "key": "+"
+                },
+                {
+                    "key": "S",
+                    "class": "shortcut-key"
+                }
+            ]
+        },
+        {
+            "description": "Frame Channel Curve",
+            "description_thai": "เฟรมช่องเส้นโค้ง",
+            "shortcut": [
+                {
+                    "key": "Alt",
+                    "class": "shortcut-key"
+                },
+                {
+                    "key": "+"
+                },
+                {
+                    "key": "<img src='assets/icon/MMB_1.svg' alt='MMB' class='mouse-icon'>"
+                }
+            ]
+        }
+    ],
+    "Drivers": [
+        {
+            "description": "Add Driver",
+            "description_thai": "เพิ่มไดรเวอร์",
+            "shortcut": [
+                {
+                    "key": "Ctrl",
+                    "class": "shortcut-key"
+                },
+                {
+                    "key": "+"
+                },
+                {
+                    "key": "D",
+                    "class": "shortcut-key"
+                }
+            ]
+        },
+        {
+            "description": "Remove Driver",
+            "description_thai": "ลบไดรเวอร์",
+            "shortcut": [
+                {
+                    "key": "Ctrl",
+                    "class": "shortcut-key"
+                },
+                {
+                    "key": "+"
+                },
+                {
+                    "key": "Alt",
+                    "class": "shortcut-key"
+                },
+                {
+                    "key": "+"
+                },
+                {
+                    "key": "D",
+                    "class": "shortcut-key"
+                }
+            ]
+        }
+    ],
+    "Nonlinear": [
+        {
+            "description": "Add Action Strip",
+            "description_thai": "เพิ่มแถบการดำเนินการ",
+            "shortcut": [
+                {
+                    "key": "Shift",
+                    "class": "shortcut-key"
+                },
+                {
+                    "key": "+"
+                },
+                {
+                    "key": "A",
+                    "class": "shortcut-key"
+                }
+            ]
+        },
+        {
+            "description": "Add Transition",
+            "description_thai": "เพิ่มการเปลี่ยนภาพ",
+            "shortcut": [
+                {
+                    "key": "Shift",
+                    "class": "shortcut-key"
+                },
+                {
+                    "key": "+"
+                },
+                {
+                    "key": "T",
+                    "class": "shortcut-key"
+                }
+            ]
+        },
+        {
+            "description": "Add Sound Clip",
+            "description_thai": "เพิ่มคลิปเสียง",
+            "shortcut": [
+                {
+                    "key": "Shift",
+                    "class": "shortcut-key"
+                },
+                {
+                    "key": "+"
+                },
+                {
+                    "key": "K",
+                    "class": "shortcut-key"
+                }
+            ]
+        },
+        {
+            "description": "Add Meta-Strips",
+            "description_thai": "เพิ่มเมตาสไตรป",
+            "shortcut": [
+                {
+                    "key": "Ctrl",
+                    "class": "shortcut-key"
+                },
+                {
+                    "key": "+"
+                },
+                {
+                    "key": "G",
+                    "class": "shortcut-key"
+                }
+            ]
+        },
+        {
+            "description": "Remove Meta-Strips",
+            "description_thai": "ลบเมตาสไตรป",
+            "shortcut": [
+                {
+                    "key": "Ctrl",
+                    "class": "shortcut-key"
+                },
+                {
+                    "key": "+"
+                },
+                {
+                    "key": "Alt",
+                    "class": "shortcut-key"
+                },
+                {
+                    "key": "+"
+                },
+                {
+                    "key": "G",
+                    "class": "shortcut-key"
+                }
+            ]
+        },
+        {
+            "description": "Split Strips",
+            "description_thai": "แยกแถบ",
+            "shortcut": [
+                {
+                    "key": "Y",
+                    "class": "shortcut-key"
+                }
+            ]
+        },
+        {
+            "description": "Toggle Muting",
+            "description_thai": "สลับปิดเสียง",
+            "shortcut": [
+                {
+                    "key": "H",
+                    "class": "shortcut-key"
+                }
+            ]
+        },
+        {
+            "description": "Swap Strips",
+            "description_thai": "สลับแถบ",
+            "shortcut": [
+                {
+                    "key": "Alt",
+                    "class": "shortcut-key"
+                },
+                {
+                    "key": "+"
+                },
+                {
+                    "key": "F",
+                    "class": "shortcut-key"
+                }
+            ]
+        }
+    ]
+}
