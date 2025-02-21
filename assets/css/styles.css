@@ -22,6 +22,11 @@
     box-sizing: border-box;
 }
 
+h1 {
+    font-family: 'Kanit', serif;
+    font-style: italic;
+}
+
 .description-style {
     font-weight: 600;
     color: var(--primary-color);
@@ -134,7 +139,7 @@ body {
     padding: 10px 15px;
     background-color: var(--secondary-color);
     border-radius: 12px;
-    border: 1.5px solid var(--primary-color);
+    border: 1.0px solid var(--primary-color);
     font-size: 1.1em;
     font-weight: 500;
     color: var(--primary-color);
@@ -176,20 +181,21 @@ body {
 }
 
 @media (max-width: 768px) {
-    table {
-        font-size: 0.5rem; /* ลดขนาดตัวอักษรในตาราง */
+    .table-custom thead th {
+        font-size: 1.0rem; /* ลดขนาดตัวอักษรหัวตาราง */
     }
     .description-style {
-        font-size: 0.5rem; /* ลดขนาดตัวอักษรในตาราง */
+        font-size: 0.8rem; /* ลดขนาดตัวอักษรคำสั่งในตาราง */
     }
-    .table-custom thead th {
-        font-size: 1.0rem; /* ลดขนาดตัวอักษรในตาราง */
+    table {
+        font-size: 0.7rem; /* ลดขนาดตัวอักษรไทยตาราง */
     }
     .shortcut-key {
-        padding: 0.2rem 0.4rem;
+        font-size: 0.7rem; /* ลดขนาดตัวอักษรคีย์ */
+        padding: 0.1rem 0.4rem;
         border-radius: 0.4rem;
     }
     .mouse-icon {
-        height: 1.4rem;
+        height: 1.4rem; /* ลดขนาดไอคอนเมาส์ */
     }
 }
