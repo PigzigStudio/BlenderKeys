@@ -470,17 +470,32 @@
         {
             "description": "Orientation",
             "description_thai": "กำหนดแนววาง",
-            "shortcut": [{ "key": ",", "class": "shortcut-key" }]
+            "shortcut": [
+                {
+                    "key": ",",
+                    "class": "shortcut-key"
+                }
+            ]
         },
         {
             "description": "Pivot Point",
             "description_thai": "กำหนดจุดหมุน",
-            "shortcut": [{ "key": ".", "class": "shortcut-key" }]
+            "shortcut": [
+                {
+                    "key": ".",
+                    "class": "shortcut-key"
+                }
+            ]
         },
         {
             "description": "Focus & Isolate",
             "description_thai": "โฟกัสและแยกวัตถุ",
-            "shortcut": [{ "key": "/", "class": "shortcut-key" }]
+            "shortcut": [
+                {
+                    "key": "/",
+                    "class": "shortcut-key"
+                }
+            ]
         }
     ],
     "Modeling": [
@@ -698,8 +713,13 @@
         {
             "description": "Proportional Editing Objects",
             "description_thai": "โหมดแก้ไขสัดส่วน",
-            "shortcut": [{ "key": "O", "class": "shortcut-key" }]
-        }        
+            "shortcut": [
+                {
+                    "key": "O",
+                    "class": "shortcut-key"
+                }
+            ]
+        }
     ],
     "Cutting": [
         {
@@ -1153,27 +1173,52 @@
         {
             "description": "Rename Object",
             "description_thai": "เปลี่ยนชื่อวัตถุ",
-            "shortcut": [{ "key": "F2", "class": "shortcut-key" }]
+            "shortcut": [
+                {
+                    "key": "F2",
+                    "class": "shortcut-key"
+                }
+            ]
         },
         {
             "description": "Search",
             "description_thai": "ค้นหา",
-            "shortcut": [{ "key": "F3", "class": "shortcut-key" }]
+            "shortcut": [
+                {
+                    "key": "F3",
+                    "class": "shortcut-key"
+                }
+            ]
         },
         {
             "description": "File Context Menu",
             "description_thai": "เมนูไฟล์",
-            "shortcut": [{ "key": "F4", "class": "shortcut-key" }]
+            "shortcut": [
+                {
+                    "key": "F4",
+                    "class": "shortcut-key"
+                }
+            ]
         },
         {
             "description": "Quick Favorites",
             "description_thai": "เมนูลัดโปรด",
-            "shortcut": [{ "key": "Q", "class": "shortcut-key" }]
+            "shortcut": [
+                {
+                    "key": "Q",
+                    "class": "shortcut-key"
+                }
+            ]
         },
         {
             "description": "Toggle Object Mode & Edit Mode",
             "description_thai": "สลับโหมด Object และ Edit",
-            "shortcut": [{ "key": "Tab", "class": "shortcut-key" }]
+            "shortcut": [
+                {
+                    "key": "Tab",
+                    "class": "shortcut-key"
+                }
+            ]
         }
     ],
     "Relations": [
@@ -1371,22 +1416,42 @@
         {
             "description": "Render View",
             "description_thai": "แสดงผลเรนเดอร์",
-            "shortcut": [{ "key": "F11", "class": "shortcut-key" }]
+            "shortcut": [
+                {
+                    "key": "F11",
+                    "class": "shortcut-key"
+                }
+            ]
         },
         {
             "description": "Open View Menu",
             "description_thai": "เปิดเมนูมุมมอง",
-            "shortcut": [{ "key": "`", "class": "shortcut-key" }]
+            "shortcut": [
+                {
+                    "key": "`",
+                    "class": "shortcut-key"
+                }
+            ]
         },
         {
             "description": "Properties Menu",
             "description_thai": "เมนูคุณสมบัติ",
-            "shortcut": [{ "key": "N", "class": "shortcut-key" }]
+            "shortcut": [
+                {
+                    "key": "N",
+                    "class": "shortcut-key"
+                }
+            ]
         },
         {
             "description": "Open Shading Menu",
             "description_thai": "เปิดเมนูแสงเงา",
-            "shortcut": [{ "key": "Z", "class": "shortcut-key" }]
+            "shortcut": [
+                {
+                    "key": "Z",
+                    "class": "shortcut-key"
+                }
+            ]
         }
     ],
     "UI": [
