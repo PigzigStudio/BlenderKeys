@@ -22,33 +22,11 @@
     box-sizing: border-box;
 }
 
-/* 🏷️ หัวข้อ */
-h1 {
-    font-family: 'Kanit', serif;
-    font-style: italic;
-    font-size: 2.5rem;
-    font-weight: 600;
-    color: var(--black-color);
-    text-align: center;
-    margin: auto;
-    padding: 3px;
-}
-
 .description-style {
     font-weight: 600;
     color: var(--primary-color);
     font-size: 1.3rem;
 }
-
-html,
-body {
-    font-family: 'Kanit', serif;
-    font-weight: 100;
-    /* หรือกำหนดน้ำหนักฟอนต์ตามต้องการ */
-    background-color: var(--background-color);
-    padding: 50px 15px;
-}
-
 
 /* 🏷️ คอนเทนเนอร์หลัก */
 .container {
@@ -195,4 +173,23 @@ body {
 
 .creator-icon:hover {
     transform: scale(1.1) rotate(5deg);
+}
+
+@media (max-width: 768px) {
+    table {
+        font-size: 0.5rem; /* ลดขนาดตัวอักษรในตาราง */
+    }
+    .description-style {
+        font-size: 0.5rem; /* ลดขนาดตัวอักษรในตาราง */
+    }
+    .table-custom thead th {
+        font-size: 1.0rem; /* ลดขนาดตัวอักษรในตาราง */
+    }
+    .shortcut-key {
+        padding: 0.2rem 0.4rem;
+        border-radius: 0.4rem;
+    }
+    .mouse-icon {
+        height: 1.4rem;
+    }
 }
