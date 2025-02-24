@@ -1,12 +1,13 @@
 function searchTable() {
     const input = document.getElementById("searchInput").value.toLowerCase().trim();
-    const keywords = input.split(/\s+/);
+    const keywords = input.split(/\s+/);  // แยกคำตามช่องว่าง
     const tables = document.querySelectorAll(".table-container");
     let hasGlobalMatch = false;
 
     tables.forEach(table => {
         let hasMatch = false;
 
+        // ✅ ค้นหาใน Header ของแต่ละตาราง
         const headers = table.querySelectorAll("thead th");
         headers.forEach(header => {
             const text = header.innerText.toLowerCase();
@@ -16,29 +17,25 @@ function searchTable() {
             }
         });
 
+        // ✅ ค้นหาในแต่ละแถวของตารางโดยใช้ `data-keywords`
         const rows = table.querySelectorAll("tbody tr");
         rows.forEach(row => {
-            const rowText = row.innerText.toLowerCase();
+            const rowText = row.getAttribute("data-keywords")?.toLowerCase() || "";
             if (keywords.every(keyword => rowText.includes(keyword))) {
-                row.style.display = "";
+                row.style.display = "";  // แสดงแถวที่ตรงกับเงื่อนไข
                 hasMatch = true;
                 hasGlobalMatch = true;
             } else {
-                row.style.display = "none";
+                row.style.display = "none";  // ซ่อนแถวที่ไม่ตรง
             }
         });
 
-        if (hasMatch) {
-            table.style.display = "";
-        } else {
-            table.style.display = "none";
-        }
+        // ✅ แสดงตารางที่มีผลลัพธ์
+        table.style.display = hasMatch ? "" : "none";
     });
-
-    if (!hasGlobalMatch) {
-        alert("ไม่พบผลลัพธ์การค้นหา");
-    }
 }
+
+
 
 // ✅ ฟังก์ชันโหลดข้อมูลจาก JSON และเติมข้อมูลลงในตาราง
 async function loadShortcuts() {
@@ -81,25 +78,39 @@ function fillTable(data, tableBody) {
     data.forEach(item => {
         const row = document.createElement("tr");
 
+        // ✅ ตรวจสอบและแสดง Header ของตาราง
         if (item.header) {
             row.innerHTML = `<th colspan="2" class="${item.header_class || "section-header"}">${item.header}</th>`;
         } else {
+            // ✅ ป้องกันค่า undefined หรือ null
             const description = item.description || "-";
             const descriptionThai = item.description_thai || "";
+
+            // ✅ ใช้ shortcut ตามที่กำหนดใน JSON (ไม่ต้องเพิ่ม `+`)
             const shortcutHtml = item.shortcut?.map(s => {
-                if (s.class) {
-                    return `<span class="${s.class}">${s.key}</span>`;
-                } else {
-                    return `<span>&nbsp;${s.key}&nbsp;</span>`;
-                }
+                return s.class 
+                    ? `<span class="${s.class}">${s.key}</span>` 
+                    : `<span>${s.key}</span>`;
             }).join(' ') || "-";
 
-            row.innerHTML = `<td><span class="description-style">${description}</span><br>${descriptionThai}</td><td>${shortcutHtml}</td>`;
+            // ✅ ตั้งค่า `data-keywords` เพื่อช่วยให้ค้นหาได้เร็วขึ้น
+            const shortcutText = item.shortcut?.map(s => s.key).join(" ") || "";
+            row.setAttribute("data-keywords", `${description} ${descriptionThai} ${shortcutText}`);
+
+            // ✅ ใส่ข้อมูลลงใน `<td>`
+            row.innerHTML = `
+                <td>
+                    <span class="description-style">${description}</span><br>
+                    ${descriptionThai}
+                </td>
+                <td>${shortcutHtml}</td>
+            `;
         }
 
         tableBody.appendChild(row);
     });
 }
+
 
 // เรียกใช้งานฟังก์ชันโหลดข้อมูลเมื่อหน้าเว็บโหลดเสร็จ
 document.addEventListener('DOMContentLoaded', loadShortcuts);
