@@ -1,39 +1,40 @@
 function searchTable() {
     const input = document.getElementById("searchInput").value.toLowerCase().trim();
-    const keywords = input.split(/\s+/);  // แยกคำตามช่องว่าง
+    const keywords = input.split(/\s+/);
     const tables = document.querySelectorAll(".table-container");
-    let hasGlobalMatch = false;
 
     tables.forEach(table => {
         let hasMatch = false;
+        const tbody = table.querySelector("tbody");
+        const header = table.querySelector("thead th"); // ✅ ดึงชื่อหัวตาราง
 
-        // ✅ ค้นหาใน Header ของแต่ละตาราง
-        const headers = table.querySelectorAll("thead th");
-        headers.forEach(header => {
-            const text = header.innerText.toLowerCase();
-            if (keywords.every(keyword => text.includes(keyword))) {
-                hasMatch = true;
-                hasGlobalMatch = true;
-            }
-        });
+        // ✅ ตรวจสอบว่ามีหัวตาราง
+        const headerText = header ? header.innerText.toLowerCase() : "";
+        let headerMatch = keywords.every(keyword => headerText.includes(keyword));
 
-        // ✅ ค้นหาในแต่ละแถวของตารางโดยใช้ `data-keywords`
+        // ✅ ค้นหาในแต่ละแถวของตาราง
         const rows = table.querySelectorAll("tbody tr");
         rows.forEach(row => {
             const rowText = row.getAttribute("data-keywords")?.toLowerCase() || "";
-            if (keywords.every(keyword => rowText.includes(keyword))) {
-                row.style.display = "";  // แสดงแถวที่ตรงกับเงื่อนไข
+            if (headerMatch || keywords.every(keyword => rowText.includes(keyword))) {
+                row.style.display = "";  // ✅ แสดงแถวที่ตรงกับเงื่อนไข
                 hasMatch = true;
-                hasGlobalMatch = true;
             } else {
-                row.style.display = "none";  // ซ่อนแถวที่ไม่ตรง
+                row.style.display = "none";  // ✅ ซ่อนแถวที่ไม่ตรง
             }
         });
 
-        // ✅ แสดงตารางที่มีผลลัพธ์
-        table.style.display = hasMatch ? "" : "none";
+        // ✅ ถ้ามีผลลัพธ์ แสดงทั้งตาราง และขยาย tbody
+        if (hasMatch) {
+            table.style.display = "";
+            tbody.style.display = ""; // ✅ เปิดตารางถ้ามันถูกยุบ
+        } else {
+            table.style.display = "none";
+        }
     });
 }
+
+
 
 
 
