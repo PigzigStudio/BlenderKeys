@@ -15,29 +15,9 @@
     --hover-color: rgba(52, 58, 64, 0.1);
 }
 
-/* ✨ รีเซ็ตค่าเบื้องต้น */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 h1 {
     font-family: 'Kanit', serif;
     font-style: italic;
-}
-
-.description-style {
-    font-weight: 600;
-    color: var(--primary-color);
-    font-size: 1.3rem;
-}
-
-/* 🏷️ คอนเทนเนอร์หลัก */
-.container {
-    max-width: 1100px;
-    margin: auto;
-    padding: 20px;
 }
 
 /* 🏷️ กล่องค้นหา */
@@ -64,6 +44,12 @@ h1 {
     box-shadow: 0 0 10px rgba(128, 0, 255, 0.5);
 }
 
+.description-style {
+    font-weight: 600;
+    color: var(--primary-color);
+    font-size: 1.3rem;
+}
+
 /* ✅ สไตล์สำหรับ Section Header */
 .section-header {
     background-color: var(--secondary-color);
@@ -78,18 +64,18 @@ h1 {
     font-family: 'Kanit', serif;
     max-width: 900px;
     margin: auto;
-    margin-bottom: 60px;
-    overflow: hidden;
-    border-radius: 25px;
+    margin-bottom: 30px;
 }
 
 .table-custom {
     width: 100%;
     table-layout: fixed;
+    overflow: hidden;
+    border-radius: 25px;
     /* กำหนดให้ความกว้างของตารางคงที่ */
     border-collapse: collapse;
     background-color: var(--white-color);
-    box-shadow: 0 4px 10px var(--shadow-color);
+    box-shadow: 0 4px 40px var(--shadow-color);
 }
 
 /* ✅ ปรับสไตล์ให้ตาราง */
@@ -182,20 +168,93 @@ body {
 
 @media (max-width: 768px) {
     .table-custom thead th {
-        font-size: 1.0rem; /* ลดขนาดตัวอักษรหัวตาราง */
+        font-size: 1.0rem;
+        /* ลดขนาดตัวอักษรหัวตาราง */
     }
+
     .description-style {
-        font-size: 0.8rem; /* ลดขนาดตัวอักษรคำสั่งในตาราง */
+        font-size: 0.8rem;
+        /* ลดขนาดตัวอักษรคำสั่งในตาราง */
     }
+
     table {
-        font-size: 0.7rem; /* ลดขนาดตัวอักษรไทยตาราง */
+        font-size: 0.7rem;
+        /* ลดขนาดตัวอักษรไทยตาราง */
     }
+
     .shortcut-key {
-        font-size: 0.7rem; /* ลดขนาดตัวอักษรคีย์ */
+        font-size: 0.7rem;
+        /* ลดขนาดตัวอักษรคีย์ */
         padding: 0.1rem 0.4rem;
         border-radius: 0.4rem;
     }
+
     .mouse-icon {
-        height: 1.4rem; /* ลดขนาดไอคอนเมาส์ */
+        height: 1.4rem;
+        /* ลดขนาดไอคอนเมาส์ */
     }
+}
+
+/* สไตล์สำหรับ tbody ที่ถูกซ่อน */
+.table-custom tbody.hidden {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 0.3s ease-in-out, max-height 0.3s ease-in-out;
+    padding: 0;
+    /* ลบ padding เมื่อซ่อน */
+    margin: 0;
+    /* ลบ margin เมื่อซ่อน */
+}
+
+/* สไตล์สำหรับ tbody ที่แสดง */
+.table-custom tbody:not(.hidden) {
+    opacity: 1;
+    max-height: 1000px;
+    /* กำหนดความสูงสูงสุดของตาราง */
+    transition: opacity 0.3s ease-in-out, max-height 0.3s ease-in-out;
+}
+
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.table-custom tbody:not(.hidden) {
+    animation: bounce 0.5s ease-in-out;
+}
+
+/* สไตล์สำหรับไอคอนยุบตารางทั้งหมด */
+.collapse-all-icon {
+    position: fixed;
+    bottom: 100px;
+    /* ปรับตำแหน่งให้อยู่เหนือไอคอนผู้สร้าง */
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: var(--primary-color);
+    /* สีพื้นหลัง */
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.collapse-all-icon:hover {
+    transform: scale(1.1) rotate(5deg);
+}
+
+.collapse-all-icon img {
+    width: 80%;
+    height: 80%;
+    object-fit: contain;
 }

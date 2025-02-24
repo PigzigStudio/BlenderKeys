@@ -12,257 +12,266 @@
     <!-- ✅ โหลด Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
 
     <!-- ✅ โหลดไฟล์ CSS -->
     <link href="assets/css/styles.css" rel="stylesheet">
 
     <!-- ✅ โหลด Bootstrap 5 -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
 <body>
-    <div class="container">
-        <h1 class="text-center"><i class="bi bi-keyboard"></i>&nbsp;&nbsp;Blender Shortcut Keys</h1>
+    <h1 class="text-center"><i class="bi bi-keyboard"></i>&nbsp;&nbsp;Blender Shortcut Keys</h1>
 
-        <!-- 🔎 ช่องค้นหา -->
-        <div class="search-container">
-            <input type="text" id="searchInput" class="form-control" placeholder="🔍 ค้นหาคีย์ลัด..."
-                onkeyup="searchTable()">
-        </div>
+    <!-- 🔎 ช่องค้นหา -->
+    <div class="search-container">
+        <input type="text" id="searchInput" class="form-control" placeholder="🔍 ค้นหาคีย์ลัด..."
+            onkeyup="searchTable()">
+    </div>
 
-        <!-- ✅ ตาราง Shortcut (แต่ละหมวดหมู่) -->
-        <div class="table-container">
-            <table class="table-custom">
-                <thead onclick="toggleTable('Selection-body')" style="cursor: pointer;">
-                    <tr>
-                        <th colspan="2">🎯 Selection การเลือก</th>
-                    </tr>
-                </thead>
-                <tbody id="Selection-body"></tbody>
-            </table>
-        </div>
+    <!-- ✅ ตาราง Shortcut (แต่ละหมวดหมู่) -->
+    <div class="table-container">
+        <table class="table-custom">
+            <thead onclick="toggleTable('Selection-body')" style="cursor: pointer;">
+                <tr>
+                    <th colspan="2">🎯 Selection การเลือก</th>
+                </tr>
+            </thead>
+            <tbody id="Selection-body"></tbody>
+        </table>
+    </div>
 
-        <div class="table-container">
-            <table class="table-custom">
-                <thead onclick="toggleTable('Transform-body')" style="cursor: pointer;">
-                    <tr>
-                        <th colspan="2">📐 Transform</th>
-                    </tr>
-                </thead>
-                <tbody id="Transform-body"></tbody>
-            </table>
-        </div>
+    <div class="table-container">
+        <table class="table-custom">
+            <thead onclick="toggleTable('Transform-body')" style="cursor: pointer;">
+                <tr>
+                    <th colspan="2">📐 Transform</th>
+                </tr>
+            </thead>
+            <tbody id="Transform-body"></tbody>
+        </table>
+    </div>
 
-        <div class="table-container">
-            <table class="table-custom">
-                <thead onclick="toggleTable('Modeling-body')" style="cursor: pointer;">
-                    <tr>
-                        <th colspan="2">🛠️ Modeling</th>
-                    </tr>
-                </thead>
-                <tbody id="Modeling-body"></tbody>
-            </table>
-        </div>
+    <div class="table-container">
+        <table class="table-custom">
+            <thead onclick="toggleTable('Modeling-body')" style="cursor: pointer;">
+                <tr>
+                    <th colspan="2">🛠️ Modeling</th>
+                </tr>
+            </thead>
+            <tbody id="Modeling-body"></tbody>
+        </table>
+    </div>
 
-        <div class="table-container">
-            <table class="table-custom">
-                <thead onclick="toggleTable('Cutting-body')" style="cursor: pointer;">
-                    <tr>
-                        <th colspan="2">✂️ Cutting</th>
-                    </tr>
-                </thead>
-                <tbody id="Cutting-body"></tbody>
-            </table>
-        </div>
+    <div class="table-container">
+        <table class="table-custom">
+            <thead onclick="toggleTable('Cutting-body')" style="cursor: pointer;">
+                <tr>
+                    <th colspan="2">✂️ Cutting</th>
+                </tr>
+            </thead>
+            <tbody id="Cutting-body"></tbody>
+        </table>
+    </div>
 
-        <div class="table-container">
-            <table class="table-custom">
-                <thead onclick="toggleTable('Navigation-body')" style="cursor: pointer;">
-                    <tr>
-                        <th colspan="2">🧭 Navigation</th>
-                    </tr>
-                </thead>
-                <tbody id="Navigation-body"></tbody>
-            </table>
-        </div>
+    <div class="table-container">
+        <table class="table-custom">
+            <thead onclick="toggleTable('Navigation-body')" style="cursor: pointer;">
+                <tr>
+                    <th colspan="2">🧭 Navigation</th>
+                </tr>
+            </thead>
+            <tbody id="Navigation-body"></tbody>
+        </table>
+    </div>
 
-        <div class="table-container">
-            <table class="table-custom">
-                <thead onclick="toggleTable('General-body')" style="cursor: pointer;">
-                    <tr>
-                        <th colspan="2">🔧 General</th>
-                    </tr>
-                </thead>
-                <tbody id="General-body"></tbody>
-            </table>
-        </div>
+    <div class="table-container">
+        <table class="table-custom">
+            <thead onclick="toggleTable('General-body')" style="cursor: pointer;">
+                <tr>
+                    <th colspan="2">🔧 General</th>
+                </tr>
+            </thead>
+            <tbody id="General-body"></tbody>
+        </table>
+    </div>
 
-        <div class="table-container">
-            <table class="table-custom">
-                <thead onclick="toggleTable('Relations-body')" style="cursor: pointer;">
-                    <tr>
-                        <th colspan="2">🔗 Relations</th>
-                    </tr>
-                </thead>
-                <tbody id="Relations-body"></tbody>
-            </table>
-        </div>
+    <div class="table-container">
+        <table class="table-custom">
+            <thead onclick="toggleTable('Relations-body')" style="cursor: pointer;">
+                <tr>
+                    <th colspan="2">🔗 Relations</th>
+                </tr>
+            </thead>
+            <tbody id="Relations-body"></tbody>
+        </table>
+    </div>
 
-        <div class="table-container">
-            <table class="table-custom">
-                <thead onclick="toggleTable('Camera-body')" style="cursor: pointer;">
-                    <tr>
-                        <th colspan="2">📷 Camera</th>
-                    </tr>
-                </thead>
-                <tbody id="Camera-body"></tbody>
-            </table>
-        </div>
+    <div class="table-container">
+        <table class="table-custom">
+            <thead onclick="toggleTable('Camera-body')" style="cursor: pointer;">
+                <tr>
+                    <th colspan="2">📷 Camera</th>
+                </tr>
+            </thead>
+            <tbody id="Camera-body"></tbody>
+        </table>
+    </div>
 
-        <div class="table-container">
-            <table class="table-custom">
-                <thead onclick="toggleTable('Rendering-body')" style="cursor: pointer;">
-                    <tr>
-                        <th colspan="2">🎞️ Rendering</th>
-                    </tr>
-                </thead>
-                <tbody id="Rendering-body"></tbody>
-            </table>
-        </div>
+    <div class="table-container">
+        <table class="table-custom">
+            <thead onclick="toggleTable('Rendering-body')" style="cursor: pointer;">
+                <tr>
+                    <th colspan="2">🎞️ Rendering</th>
+                </tr>
+            </thead>
+            <tbody id="Rendering-body"></tbody>
+        </table>
+    </div>
 
-        <div class="table-container">
-            <table class="table-custom">
-                <thead onclick="toggleTable('UI-body')" style="cursor: pointer;">
-                    <tr>
-                        <th colspan="2">🖥️ UI</th>
-                    </tr>
-                </thead>
-                <tbody id="UI-body"></tbody>
-            </table>
-        </div>
+    <div class="table-container">
+        <table class="table-custom">
+            <thead onclick="toggleTable('UI-body')" style="cursor: pointer;">
+                <tr>
+                    <th colspan="2">🖥️ UI</th>
+                </tr>
+            </thead>
+            <tbody id="UI-body"></tbody>
+        </table>
+    </div>
 
-        <div class="table-container">
-            <table class="table-custom">
-                <thead onclick="toggleTable('Bool-Tool-body')" style="cursor: pointer;">
-                    <tr>
-                        <th colspan="2">🛠️ Bool-Tool</th>
-                    </tr>
-                </thead>
-                <tbody id="Bool-Tool-body"></tbody>
-            </table>
-        </div>
+    <div class="table-container">
+        <table class="table-custom">
+            <thead onclick="toggleTable('Bool-Tool-body')" style="cursor: pointer;">
+                <tr>
+                    <th colspan="2">🛠️ Bool-Tool</th>
+                </tr>
+            </thead>
+            <tbody id="Bool-Tool-body"></tbody>
+        </table>
+    </div>
 
-        <div class="table-container">
-            <table class="table-custom">
-                <thead onclick="toggleTable('Nodes-body')" style="cursor: pointer;">
-                    <tr>
-                        <th colspan="2">🔗 Nodes</th>
-                    </tr>
-                </thead>
-                <tbody id="Nodes-body"></tbody>
-            </table>
-        </div>
+    <div class="table-container">
+        <table class="table-custom">
+            <thead onclick="toggleTable('Nodes-body')" style="cursor: pointer;">
+                <tr>
+                    <th colspan="2">🔗 Nodes</th>
+                </tr>
+            </thead>
+            <tbody id="Nodes-body"></tbody>
+        </table>
+    </div>
 
-        <div class="table-container">
-            <table class="table-custom">
-                <thead onclick="toggleTable('Node Wrangler-body')" style="cursor: pointer;">
-                    <tr>
-                        <th colspan="2">🛠️ Node Wrangler</th>
-                    </tr>
-                </thead>
-                <tbody id="Node Wrangler-body"></tbody>
-            </table>
-        </div>
+    <div class="table-container">
+        <table class="table-custom">
+            <thead onclick="toggleTable('Node Wrangler-body')" style="cursor: pointer;">
+                <tr>
+                    <th colspan="2">🛠️ Node Wrangler</th>
+                </tr>
+            </thead>
+            <tbody id="Node Wrangler-body"></tbody>
+        </table>
+    </div>
 
-        <div class="table-container">
-            <table class="table-custom">
-                <thead onclick="toggleTable('Compositing-body')" style="cursor: pointer;">
-                    <tr>
-                        <th colspan="2">🎨 Compositing</th>
-                    </tr>
-                </thead>
-                <tbody id="Compositing-body"></tbody>
-            </table>
-        </div>
+    <div class="table-container">
+        <table class="table-custom">
+            <thead onclick="toggleTable('Compositing-body')" style="cursor: pointer;">
+                <tr>
+                    <th colspan="2">🎨 Compositing</th>
+                </tr>
+            </thead>
+            <tbody id="Compositing-body"></tbody>
+        </table>
+    </div>
 
-        <div class="table-container">
-            <table class="table-custom">
-                <thead onclick="toggleTable('UV Editor-body')" style="cursor: pointer;">
-                    <tr>
-                        <th colspan="2">🖌️ UV Editor</th>
-                    </tr>
-                </thead>
-                <tbody id="UV Editor-body"></tbody>
-            </table>
-        </div>
+    <div class="table-container">
+        <table class="table-custom">
+            <thead onclick="toggleTable('UV Editor-body')" style="cursor: pointer;">
+                <tr>
+                    <th colspan="2">🖌️ UV Editor</th>
+                </tr>
+            </thead>
+            <tbody id="UV Editor-body"></tbody>
+        </table>
+    </div>
 
-        <div class="table-container">
-            <table class="table-custom">
-                <thead onclick="toggleTable('Animation General-body')" style="cursor: pointer;">
-                    <tr>
-                        <th colspan="2">🎬 Animation General</th>
-                    </tr>
-                </thead>
-                <tbody id="Animation General-body"></tbody>
-            </table>
-        </div>
+    <div class="table-container">
+        <table class="table-custom">
+            <thead onclick="toggleTable('Animation General-body')" style="cursor: pointer;">
+                <tr>
+                    <th colspan="2">🎬 Animation General</th>
+                </tr>
+            </thead>
+            <tbody id="Animation General-body"></tbody>
+        </table>
+    </div>
 
-        <div class="table-container">
-            <table class="table-custom">
-                <thead onclick="toggleTable('Animation Timeline-body')" style="cursor: pointer;">
-                    <tr>
-                        <th colspan="2">⏱️ Animation Timeline</th>
-                    </tr>
-                </thead>
-                <tbody id="Animation Timeline-body"></tbody>
-            </table>
-        </div>
+    <div class="table-container">
+        <table class="table-custom">
+            <thead onclick="toggleTable('Animation Timeline-body')" style="cursor: pointer;">
+                <tr>
+                    <th colspan="2">⏱️ Animation Timeline</th>
+                </tr>
+            </thead>
+            <tbody id="Animation Timeline-body"></tbody>
+        </table>
+    </div>
 
-        <div class="table-container">
-            <table class="table-custom">
-                <thead onclick="toggleTable('Graph Editor-body')" style="cursor: pointer;">
-                    <tr>
-                        <th colspan="2">📈 Graph Editor</th>
-                    </tr>
-                </thead>
-                <tbody id="Graph Editor-body"></tbody>
-            </table>
-        </div>
+    <div class="table-container">
+        <table class="table-custom">
+            <thead onclick="toggleTable('Graph Editor-body')" style="cursor: pointer;">
+                <tr>
+                    <th colspan="2">📈 Graph Editor</th>
+                </tr>
+            </thead>
+            <tbody id="Graph Editor-body"></tbody>
+        </table>
+    </div>
 
-        <div class="table-container">
-            <table class="table-custom">
-                <thead onclick="toggleTable('Drivers-body')" style="cursor: pointer;">
-                    <tr>
-                        <th colspan="2">🚗 Drivers</th>
-                    </tr>
-                </thead>
-                <tbody id="Drivers-body"></tbody>
-            </table>
-        </div>
+    <div class="table-container">
+        <table class="table-custom">
+            <thead onclick="toggleTable('Drivers-body')" style="cursor: pointer;">
+                <tr>
+                    <th colspan="2">🚗 Drivers</th>
+                </tr>
+            </thead>
+            <tbody id="Drivers-body"></tbody>
+        </table>
+    </div>
 
-        <div class="table-container">
-            <table class="table-custom">
-                <thead onclick="toggleTable('Nonlinear-body')" style="cursor: pointer;">
-                    <tr>
-                        <th colspan="2">🎬 Nonlinear</th>
-                    </tr>
-                </thead>
-                <tbody id="Nonlinear-body"></tbody>
-            </table>
-        </div>
+    <div class="table-container">
+        <table class="table-custom">
+            <thead onclick="toggleTable('Nonlinear-body')" style="cursor: pointer;">
+                <tr>
+                    <th colspan="2">🎬 Nonlinear</th>
+                </tr>
+            </thead>
+            <tbody id="Nonlinear-body"></tbody>
+        </table>
+    </div>
 
-        <!-- ✅ ไอคอนผู้สร้าง -->
-        <a href="https://web.facebook.com/profile.php?id=61558622853306" target="_blank">
-            <img src="assets/images/Profile_002.png" alt="Creator Icon" class="creator-icon">
-        </a>
+    <!-- ✅ ไอคอนยุบตารางทั้งหมด -->
+    <div class="collapse-all-icon" onclick="toggleAllTables()">
+        <img src="assets\icon\LMB_1.svg" alt="Collapse All Icon" title="ยุบ/ขยายตารางทั้งหมด">
+    </div>
+
+    <!-- ✅ ไอคอนผู้สร้าง -->
+    <a href="https://web.facebook.com/profile.php?id=61558622853306" target="_blank">
+        <img src="assets/images/Profile_002.jpg" alt="Creator Icon" class="creator-icon">
+    </a>
     </div>
 
     <!-- ✅ โหลดไฟล์ JavaScript -->
     <script src="assets/scripts/scripts.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
+    <!-- เพิ่ม Bootstrap JS และ dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
 </body>
+
 </html>
